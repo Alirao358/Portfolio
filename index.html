@@ -1,43 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link
-    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
-    rel="stylesheet"
-/>
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="./favicon_io/favicon.ico"
+      type="image/x-icon"
+    />
   </head>
   <body class="text-white">
     <!-- navbar -->
-    <div class="bg-[#20242D]">
+    <div class="bg-[#20242D] h-screen">
       <nav>
         <div class="bg-[#20242D] justify-between flex gap-10 w-100 px-11 py-8">
-          <div class="text-white font-bold text-3xl hover:text-[#FF4500]">
-            <span class="text-[#FF4500]">A</span><span>R</span>
+          <div class="text-white font-bold text-3xl hover:text-[#00EFFF]">
+            <p class="text-[##10B8C3]">A<span>R</span></p>
           </div>
           <div class="text-white flex">
-            <ul class="flex gap-7 text-xl">
-              <li class="hover:text-[#10B8C3]"><a href="">Home</a></li>
-              <li class="hover:text-[#10B8C3]"><a href="">About</a></li>
-              <li class="hover:text-[#10B8C3]"><a href="">Services</a></li>
-              <li class="hover:text-[#10B8C3]"><a href="">Portfolio</a></li>
-              <li class="hover:text-[#10B8C3]"><a href="">Contact</a></li>
+            <ul class="flex gap-7 text-xl [&>*:hover]:text-[#00EFFF]">
+              <li><a href="#bottom">Home</a></li>
+              <li><a href="">About</a></li>
+              <li><a href="">Services</a></li>
+              <li><a href="">Portfolio</a></li>
+              <li><a href="">Contact</a></li>
             </ul>
           </div>
         </div>
       </nav>
 
       <!-- header  -->
-      <div class="px-11 flex  " >
-        <div class="w-[50%] mt-24" >
+      <div class="px-11 flex h-screen">
+        <div class="w-[50%] mt-24">
           <h3 class="font-semibold text-2xl">Hello,It's Me</h3>
           <h1 class="text-5xl font-bold mt-1">ALI RAO</h1>
           <h2 class="font-semibold text-2xl mt-2">
             And I'm a
-            <span class="font-semibold text-2xl text-[#01F0F4]"
+            <span class="font-semibold text-2xl text-[#00EFFF]"
               >Frontend Developer</span
             >
           </h2>
@@ -46,26 +51,276 @@
             Node.js, Bootstrap, and React.js. With a Software Engineering
             background and a Cybersecurity Essentials certificate.
           </p>
-          <div class="flex gap-3 mt-3">
-                <a href=""><i class="ri-facebook-circle-fill border-2 text-[#10B8C3] px-2 py-2 border-[#10B8C3] rounded-full hover:bg-[#10B8C3]   hover:text-white"></i></a>
-                <a href=""><i class="ri-twitter-x-fill hover:text-[#10B8C3]"></i></a>
-                <a href=""><i class="ri-linkedin-box-fill hover:text-[skyblue]"></i></a>
-                <a href=""><i class="ri-instagram-line hover:text-[orange]"></i></a>
+          <div
+            class="flex gap-8 text-2xl mt-2 [&>*:hover]:text-black [&>*:hover]:bg-[#00EFFF]"
+          >
+            <a
+              class="border rounded-full px-2 py-1 text-[#00EFFF] transition-all duration-500"
+              href=""
+            >
+              <i class="ri-facebook-circle-fill"></i
+            ></a>
+            <a
+              class="border rounded-full px-2 py-1 text-[#00EFFF] transition-all duration-500"
+              href=""
+            >
+              <i class="ri-twitter-x-fill"></i
+            ></a>
+            <a
+              class="border rounded-full px-2 py-1 text-[#00EFFF] transition-all duration-500"
+              href=""
+            >
+              <i class="ri-linkedin-box-fill"></i
+            ></a>
+            <a
+              class="border rounded-full px-2 py-1 text-[#00EFFF] transition-all duration-500"
+              href=""
+            >
+              <i class="ri-instagram-line"></i
+            ></a>
           </div>
+          <!-- button  -->
           <div>
-            <button class="bg-[#10B8C3] px-3 py-2 rounded-full text-black border-0 drop-shadow-md my-4">Downlod CV</button>
+            <button
+              class="bg-[#00EFFF] px-3 py-2 rounded-full text-black border-0 my-6 shadow-[#00EFFF] shadow-md"
+            >
+              Downlod CV
+            </button>
           </div>
         </div>
-        <div class="w-[50%]">
-          <div class="bg-[#01EEFF] h-46 w-48 rounded-full">
-            
-            <div class="  ">
-              <img src="./image.png" alt="" />
+        <div class="w-[50%] flex">
+          <div
+            class="bg-[#00EAFB] overflow-hidden top-6 left-40 relative w-96 rounded-full h-96"
+          >
+            <div class="absolute bottom-[-20px]">
+              <img src="./image.png" class=" " alt="" />
             </div>
           </div>
         </div>
       </div>
     </div>
+    <!-- about -->
+    <div class="px-20 justify-center flex bg-[#323846] h-screen">
+      <div
+        class="bg-[#00EAFB] overflow-hidden top-12 flex justify-center right-10 relative w-80 rounded-full h-80"
+      >
+        <div class="absolute flex align-middle bottom-[-13px]">
+          <img src="image.png" alt="" />
+        </div>
+      </div>
+      <div class="w-[50%] mt-14 h-100 w-100 px-13 py-10">
+        <h1 class="font-bold text-4xl">
+          About <span class="font-semibold text-[#00EFFF] text-4xl">ME</span>
+        </h1>
+        <h3 class="font-semibold text-3xl">Frontend Developer!</h3>
+        <p class="text-gray-300 mt-3 font-sans">
+          I'm Ali Rao, a Front-End Developer skilled in HTML, CSS, JavaScript,
+          Node.js, Bootstrap, and React.js. With a Software Engineering
+          background and a Cybersecurity Essentials certificate.
+        </p>
+      </div>
+    </div>
+    <!-- Services -->
+    <div class="px-20 bg-[#20242D] h-screen">
+      <div>
+        <h1 class="text-center pt-16 font-bold text-3xl">
+          Our <span class="font-bold text-3xl text-[#00EFFF]">Services</span>
+        </h1>
+      </div>
+      <div class="flex h-[30rem] w-full items-center justify-center pt-8">
+        <div class="flex items-center gap-8">
+          <div class="p-2 h-[85%] w-72 rounded-3xl bg-[#323846]">
+            <a class="flex justify-center text-[#00EFFF] text-4xl" href=""
+              ><i class="ri-code-s-slash-line"></i>
+            </a>
+            <p
+              class="flex justify-center my-6 text-[#00EFFF] text-2xl font-bold"
+            >
+              Web Development
+            </p>
+            <p class="ml-6 my-4 text-gray-300 font-sans">
+              Building and maintaining websites to ensure functionality, user
+              experience, and security.
+            </p>
+            <button
+              class="bg-[#00EFFF] px-3 py-2 rounded-full text-black border-0 my-14 shadow-[#00EFFF] shadow-md font-semibold ml-14"
+            >
+              Read More
+            </button>
+          </div>
+          <div class="p-2 h-[85%] w-72 rounded-3xl bg-[#323846]">
+            <a class="flex justify-center text-[#00EFFF] text-4xl" href=""
+              ><i class="ri-mark-pen-line"></i
+            ></a>
+            <p
+              class="flex justify-center my-6 text-[#00EFFF] text-2xl font-bold"
+            >
+              Graphic Design
+            </p>
+            <p class="ml-6 my-4 text-gray-300 font-sans">
+              Creating visual content to communicate messages and build brand
+              identity using images, text, and color.
+            </p>
+            <button
+              class="bg-[#00EFFF] px-3 py-2 rounded-full text-black border-0 my-14 shadow-[#00EFFF] shadow-md font-semibold ml-14"
+            >
+              Read More
+            </button>
+          </div>
+          <div class="p-2 h-[85%] w-72 rounded-3xl bg-[#323846]">
+            <a class="flex justify-center text-[#00EFFF] text-4xl" href=""
+              ><i class="ri-bar-chart-fill"></i
+            ></a>
+            <p
+              class="flex justify-center my-6 text-[#00EFFF] text-2xl font-bold"
+            >
+              Degital Marketing
+            </p>
+            <p class="ml-6 mt-4 text-gray-300 font-sans">
+              Promoting brands and products online via social media, search
+              engines, and other digital channels to reach target audiences.
+            </p>
 
+            <button
+              class="bg-[#00EFFF] px-3 py-2 rounded-full text-black my-14 shadow-[#00EFFF] shadow-md font-semibold ml-14"
+            >
+              Read More
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="bg-[#323846]">
+        <div>
+          <h1 class="text-center pt-10 pb-6 font-bold text-3xl">
+            Latest
+            <span class="font-bold text-3xl text-[#00EFFF]">Project</span>
+          </h1>
+        </div>
+        <!-- First Image Box -->
+        <div class="grid grid-cols-3 place-items-center gap-5 px-9">
+          <div class="w-56 h-56">
+            <img
+              class="w-full rounded-3xl object-cover h-full"
+              src="Image.1.jpg"
+              alt=""
+            />
+          </div>
+
+          <!-- Second Image Box -->
+          <div class="w-56 h-56">
+            <img
+              class="w-full rounded-3xl object-cover h-full"
+              src="image.2.jpg"
+              alt=""
+            />
+          </div>
+
+          <!-- Third Image Box -->
+          <div class="w-56 h-56">
+            <img
+              class="w-full rounded-3xl object-cover h-full"
+              src="image.3.jpg"
+              alt=""
+            />
+          </div>
+
+          <!-- Fourth Image Box -->
+          <div class="w-56 h-56">
+            <img
+              class="w-full rounded-3xl object-cover h-full"
+              src="image.4.jpg"
+              alt=""
+            />
+          </div>
+          <!-- fifth image box  -->
+          <div class="w-56 h-56">
+            <img
+              class="w-full rounded-3xl object-cover h-full"
+              src="image.5.jpg"
+              alt=""
+            />
+          </div>
+          <!-- image sixth  box  -->
+          <div class="w-56 h-56">
+            <img
+              class="w-full h-full rounded-3xl object-cover"
+              src="image.6.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div>
+        <div class="bg-[#20242D]">
+          <div>
+            <h1 class="text-center pt-10 pb-6 font-bold text-3xl">
+              Contact
+              <span class="font-bold text-3xl text-[#00EFFF]">Me!</span>
+            </h1>
+          </div>
+          <div class="form-container bg-gray-800 p-8 rounded-lg shadow-lg max-w-md mx-auto mt-10">
+            <form action="#" method="POST">
+              <!-- Name and Email on top -->
+              <div class="grid grid-cols-1 gap-4 mb-6">
+                <!-- Name -->
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  class="w-full p-3 rounded-lg bg-gray-700 text-white"
+                  placeholder="Your Name"
+                  required
+                />
+          
+                <!-- Email -->
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="w-full p-3 rounded-lg bg-gray-700 text-white"
+                  placeholder="Your Email"
+                  required
+                />
+              </div>
+          
+              <!-- Contact and Message -->
+              <div class="grid grid-cols-1 gap-4">
+                <!-- Contact -->
+                <input
+                  type="tel"
+                  id="contact"
+                  name="contact"
+                  class="w-full p-3 rounded-lg bg-gray-700 text-white"
+                  placeholder="Your Contact Number"
+                  required
+                />
+          
+                <!-- Message -->
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="4"
+                  class="w-full p-3 rounded-lg bg-gray-700 text-white"
+                  placeholder="Your Message"
+                  required
+                ></textarea>
+              </div>
+          
+              <!-- Submit Button -->
+              <div class="text-center mt-6">
+                <button
+                  type="submit"
+                  class="bg-[#00EFFF] text-black px-6 py-3 rounded-full text-xl font-semibold hover:bg-[#00c8cc] transition"
+                >
+                  Send Message
+                </button>
+              </div>
+            </form>
+          </div>
+          
   </body>
 </html>
