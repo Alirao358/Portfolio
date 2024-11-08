@@ -25,11 +25,11 @@
           </div>
           <div class="text-white flex">
             <ul class="flex gap-7 text-xl [&>*:hover]:text-[#00EFFF]">
-              <li><a href="#bottom">Home</a></li>
-              <li><a href="">About</a></li>
-              <li><a href="">Services</a></li>
-              <li><a href="">Portfolio</a></li>
-              <li><a href="">Contact</a></li>
+              <li><a href="">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#contact">Contact</a></li>
             </ul>
           </div>
         </div>
@@ -46,13 +46,13 @@
               >Frontend Developer</span
             >
           </h2>
-          <p class="text-gray-200 mt-3">
+          <p class="text-gray-200 text-2xl mt-3">
             I'm Ali Rao, a Front-End Developer skilled in HTML, CSS, JavaScript,
             Node.js, Bootstrap, and React.js. With a Software Engineering
             background and a Cybersecurity Essentials certificate.
           </p>
           <div
-            class="flex gap-8 text-2xl mt-2 [&>*:hover]:text-black [&>*:hover]:bg-[#00EFFF]"
+            class="flex gap-8 text-2xl mt-3 [&>*:hover]:text-black [&>*:hover]:bg-[#00EFFF]"
           >
             <a
               class="border rounded-full px-2 py-1 text-[#00EFFF] transition-all duration-500"
@@ -82,7 +82,7 @@
           <!-- button  -->
           <div>
             <button
-              class="bg-[#00EFFF] px-3 py-2 rounded-full text-black border-0 my-6 shadow-[#00EFFF] shadow-md"
+              class="bg-[#00EFFF] px-3 pb-1 flex justify-center py-2 rounded-full text-black border-0 my-6 shadow-[#00EFFF] shadow-md"
             >
               Downlod CV
             </button>
@@ -100,7 +100,7 @@
       </div>
     </div>
     <!-- about -->
-    <div class="px-20 justify-center flex bg-[#323846] h-screen">
+    <div class="px-20 justify-center flex bg-[#323846] h-screen" id="about">
       <div
         class="bg-[#00EAFB] overflow-hidden top-12 flex justify-center right-10 relative w-80 rounded-full h-80"
       >
@@ -108,12 +108,12 @@
           <img src="image.png" alt="" />
         </div>
       </div>
-      <div class="w-[50%] mt-14 h-100 w-100 px-13 py-10">
+      <div class="w-[50%] mt-16 h-100 w-100 px-13 py-10">
         <h1 class="font-bold text-4xl">
           About <span class="font-semibold text-[#00EFFF] text-4xl">ME</span>
         </h1>
         <h3 class="font-semibold text-3xl">Frontend Developer!</h3>
-        <p class="text-gray-300 mt-3 font-sans">
+        <p class="text-gray-300 mt-4 font-sans text-2xl">
           I'm Ali Rao, a Front-End Developer skilled in HTML, CSS, JavaScript,
           Node.js, Bootstrap, and React.js. With a Software Engineering
           background and a Cybersecurity Essentials certificate.
@@ -121,15 +121,15 @@
       </div>
     </div>
     <!-- Services -->
-    <div class="px-20 bg-[#20242D] h-screen">
+    <div class="px-20 bg-[#20242D] h-screen" id="services">
       <div>
         <h1 class="text-center pt-16 font-bold text-3xl">
           Our <span class="font-bold text-3xl text-[#00EFFF]">Services</span>
         </h1>
       </div>
       <div class="flex h-[30rem] w-full items-center justify-center pt-8">
-        <div class="flex items-center gap-8">
-          <div class="p-2 h-[85%] w-72 rounded-3xl bg-[#323846]">
+        <div class="flex items-center gap-8 ">
+          <div class="p-2 h-[85%] w-72 rounded-3xl bg-[#323846] ">
             <a class="flex justify-center text-[#00EFFF] text-4xl" href=""
               ><i class="ri-code-s-slash-line"></i>
             </a>
@@ -158,8 +158,8 @@
               Graphic Design
             </p>
             <p class="ml-6 my-4 text-gray-300 font-sans">
-              Creating visual content to communicate messages and build brand
-              identity using images, text, and color.
+              Promoting brands and products online via social media, search
+              engines, and other digital channels to reach target audiences.
             </p>
             <button
               class="bg-[#00EFFF] px-3 py-2 rounded-full text-black border-0 my-14 shadow-[#00EFFF] shadow-md font-semibold ml-14"
@@ -193,63 +193,19 @@
     <div>
       <div class="bg-[#323846]">
         <div>
-          <h1 class="text-center pt-10 pb-6 font-bold text-3xl">
+          <h1 class="text-center pt-10 pb-6 font-bold text-3xl" id="portfolio">
             Latest
             <span class="font-bold text-3xl text-[#00EFFF]">Project</span>
           </h1>
         </div>
         <!-- First Image Box -->
-        <div class="grid grid-cols-3 place-items-center gap-5 px-9 pb-3">
-          <div class="w-56 h-56">
-            <img
-              class="w-full rounded-3xl object-cover h-full"
-              src="Image.1.jpg"
-              alt=""
-            />
-          </div>
-
-          <!-- Second Image Box -->
-          <div class="w-56 h-56">
-            <img
-              class="w-full rounded-3xl object-cover h-full"
-              src="image.2.jpg"
-              alt=""
-            />
-          </div>
-
-          <!-- Third Image Box -->
-          <div class="w-56 h-56">
-            <img
-              class="w-full rounded-3xl object-cover h-full"
-              src="image.3.jpg"
-              alt=""
-            />
-          </div>
-
-          <!-- Fourth Image Box -->
-          <div class="w-56 h-56">
-            <img
-              class="w-full rounded-3xl object-cover h-full"
-              src="image.4.jpg"
-              alt=""
-            />
-          </div>
-          <!-- fifth image box  -->
-          <div class="w-56 h-56">
-            <img
-              class="w-full rounded-3xl object-cover h-full"
-              src="image.5.jpg"
-              alt=""
-            />
-          </div>
-          <!-- image sixth  box  -->
-          <div class="w-56 h-56">
-            <img
-              class="w-full h-full rounded-3xl object-cover"
-              src="image.6.jpg"
-              alt=""
-            />
-          </div>
+        <div class="grid grid-cols-3 place-items-center gap-2 pb-3 ">
+          <img src="Image.1.jpg"alt="" class=" border-black w-64 h-64  object-cover rounded-3xl "/>
+          <img src="image.2.jpg"alt="" class=" border-black w-64 h-64  object-cover rounded-3xl "/>
+          <img src="image.3.jpg"alt="" class=" border-black w-64 h-64  object-cover rounded-3xl"/>
+          <img src="image.4.jpg"alt="" class=" border-black w-64 h-64  object-cover rounded-3xl "/>
+          <img src="image.5.jpg"alt="" class=" border-black w-64 h-64  object-cover rounded-3xl "/>
+          <img src="image.6.jpg"alt="" class=" border-black w-64 h-64  object-cover rounded-3xl"/>
         </div>
       </div>
     </div>
@@ -257,13 +213,13 @@
       <div>
         <div class="bg-[#20242D]">
           <div>
-            <h1 class="text-center pt-10 pb-6 font-bold text-3xl">
+            <h1 class="text-center pt-10 pb-6 font-bold text-3xl" id="contact">
               Contact
               <span class="font-bold text-3xl text-[#00EFFF]">Me!</span>
             </h1>
           </div>
-          <div class="flex flex-col  gap-4 p-6 m-12">
-            <div class="flex gap-4 ">
+          <div class="flex flex-col gap-4 p-6 m-12">
+            <div class="flex gap-4">
               <!-- Name -->
               <input
                 class="bg-[#323846] p-2 rounded w-full"
@@ -295,14 +251,14 @@
               />
             </div>
             <!-- message  -->
-              <textarea
-                class="bg-[#323846] h-36 p-2 rounded w-full"
-                id="message"
-                name="message"
-                cols="152"
-                placeholder="Your Message"
-                required
-              ></textarea>
+            <textarea
+              class="bg-[#323846] h-36 p-2 rounded w-full"
+              id="message"
+              name="message"
+              cols="152"
+              placeholder="Your Message"
+              required
+            ></textarea>
           </div>
           <!-- button -->
           <div class="text-center mt-6 pb-10">
@@ -317,9 +273,18 @@
       </div>
     </div>
     <div>
-      <div class="bg-[#323846] h-16">
-        <p class="px-5 py-3 text-gray-400">copyright © 2024 by Ali Rao| All Right Reserved</p>
+      <div class="bg-[#323846] flex justify-around">
+        <p class="px-5 py-3 text-gray-400">
+          copyright © 2024 by Ali Rao| All Right Reserved
+        </p>
+        <div class="px-32 bg-slate-400">
+          <a class="px-1 text-[#00EFFF] text-3xl mb-1" id="goToTopButton"
+            ><i class="ri-arrow-up-double-fill"></i
+          ></a>
+        </div>
       </div>
+      <div class="h-screen"></div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
