@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
@@ -24,8 +24,8 @@
             <p class="text-[##10B8C3]">A<span>R</span></p>
           </div>
           <div class="text-white flex">
-            <ul class="flex gap-7 text-xl [&>*:hover]:text-[#00EFFF]">
-              <li><a href="">Home</a></li>
+            <ul class="flex gap-7 text-xl [&>*:hover]:text-[#00EFFF]" id="home">
+              <li><a href="#home">Home</a></li>
               <li><a href="#about">About</a></li>
               <li><a href="#services">Services</a></li>
               <li><a href="#portfolio">Portfolio</a></li>
@@ -37,7 +37,7 @@
 
       <!-- header  -->
       <div class="px-11 flex h-screen">
-        <div class="w-[50%] mt-24">
+        <div class="w-[50%] mt-24 mx-auto">
           <h3 class="font-semibold text-2xl">Hello,It's Me</h3>
           <h1 class="text-5xl font-bold mt-1">ALI RAO</h1>
           <h2 class="font-semibold text-2xl mt-2">
@@ -46,7 +46,7 @@
               >Frontend Developer</span
             >
           </h2>
-          <p class="text-gray-200 text-2xl mt-3">
+          <p class="text-gray-200 text-1xl mt-3">
             I'm Ali Rao, a Front-End Developer skilled in HTML, CSS, JavaScript,
             Node.js, Bootstrap, and React.js. With a Software Engineering
             background and a Cybersecurity Essentials certificate.
@@ -55,25 +55,25 @@
             class="flex gap-8 text-2xl mt-3 [&>*:hover]:text-black [&>*:hover]:bg-[#00EFFF]"
           >
             <a
-              class="border rounded-full px-2 py-1 text-[#00EFFF] transition-all duration-500"
+              class="border border-[#00EFFF] rounded-full px-2 py-1 text-[#00EFFF] transition-all duration-500"
               href=""
             >
               <i class="ri-facebook-circle-fill"></i
             ></a>
             <a
-              class="border rounded-full px-2 py-1 text-[#00EFFF] transition-all duration-500"
+              class="border border-[#00EFFF] rounded-full px-2 py-1 text-[#00EFFF] transition-all duration-500"
               href=""
             >
               <i class="ri-twitter-x-fill"></i
             ></a>
             <a
-              class="border rounded-full px-2 py-1 text-[#00EFFF] transition-all duration-500"
+              class="border border-[#00EFFF] rounded-full px-2 py-1 text-[#00EFFF] transition-all duration-500"
               href=""
             >
               <i class="ri-linkedin-box-fill"></i
             ></a>
             <a
-              class="border rounded-full px-2 py-1 text-[#00EFFF] transition-all duration-500"
+              class="border border-[#00EFFF] rounded-full px-2 py-1 text-[#00EFFF] transition-all duration-500"
               href=""
             >
               <i class="ri-instagram-line"></i
@@ -112,8 +112,8 @@
         <h1 class="font-bold text-4xl">
           About <span class="font-semibold text-[#00EFFF] text-4xl">ME</span>
         </h1>
-        <h3 class="font-semibold text-3xl">Frontend Developer!</h3>
-        <p class="text-gray-300 mt-4 font-sans text-2xl">
+        <h3 class="font-semibold text-2xl">Frontend Developer!</h3>
+        <p class="text-gray-300 mt-4 font-sans text-1xl">
           I'm Ali Rao, a Front-End Developer skilled in HTML, CSS, JavaScript,
           Node.js, Bootstrap, and React.js. With a Software Engineering
           background and a Cybersecurity Essentials certificate.
@@ -128,8 +128,10 @@
         </h1>
       </div>
       <div class="flex h-[30rem] w-full items-center justify-center pt-8">
-        <div class="flex items-center gap-8 ">
-          <div class="p-2 h-[85%] w-72 rounded-3xl bg-[#323846] ">
+        <div class="flex items-center gap-8">
+          <div
+            class="p-2 h-[85%] w-72 rounded-3xl bg-[#323846] border border-transparent transition-all duration-500 hover:border-[#00EFFF] hover:transform"
+          >
             <a class="flex justify-center text-[#00EFFF] text-4xl" href=""
               ><i class="ri-code-s-slash-line"></i>
             </a>
@@ -148,7 +150,9 @@
               Read More
             </button>
           </div>
-          <div class="p-2 h-[85%] w-72 rounded-3xl bg-[#323846]">
+          <div
+            class="p-2 h-[85%] w-72 rounded-3xl bg-[#323846] border border-transparent transition-all duration-500 hover:border-[#00EFFF]"
+          >
             <a class="flex justify-center text-[#00EFFF] text-4xl" href=""
               ><i class="ri-mark-pen-line"></i
             ></a>
@@ -167,7 +171,9 @@
               Read More
             </button>
           </div>
-          <div class="p-2 h-[85%] w-72 rounded-3xl bg-[#323846]">
+          <div
+            class="p-2 h-[85%] w-72 rounded-3xl bg-[#323846] border border-transparent transition-all duration-500 hover:border-[#00EFFF]"
+          >
             <a class="flex justify-center text-[#00EFFF] text-4xl" href=""
               ><i class="ri-bar-chart-fill"></i
             ></a>
@@ -193,20 +199,12 @@
     <div>
       <div class="bg-[#323846]">
         <div>
-          <h1 class="text-center pt-10 pb-6 font-bold text-3xl" id="portfolio">
+          <h1 class="text-center pt-5 pb-11 font-bold text-3xl" id="portfolio">
             Latest
             <span class="font-bold text-3xl text-[#00EFFF]">Project</span>
           </h1>
         </div>
         <!-- First Image Box -->
-        <div class="grid grid-cols-3 place-items-center gap-2 pb-3 ">
-          <img src="Image.1.jpg"alt="" class=" border-black w-64 h-64  object-cover rounded-3xl "/>
-          <img src="image.2.jpg"alt="" class=" border-black w-64 h-64  object-cover rounded-3xl "/>
-          <img src="image.3.jpg"alt="" class=" border-black w-64 h-64  object-cover rounded-3xl"/>
-          <img src="image.4.jpg"alt="" class=" border-black w-64 h-64  object-cover rounded-3xl "/>
-          <img src="image.5.jpg"alt="" class=" border-black w-64 h-64  object-cover rounded-3xl "/>
-          <img src="image.6.jpg"alt="" class=" border-black w-64 h-64  object-cover rounded-3xl"/>
-        </div>
       </div>
     </div>
     <div>
@@ -218,47 +216,44 @@
               <span class="font-bold text-3xl text-[#00EFFF]">Me!</span>
             </h1>
           </div>
-          <div class="flex flex-col gap-4 p-6 m-12">
-            <div class="flex gap-4">
-              <!-- Name -->
+          <div class="p-28 flex flex-col gap-5 pt-7">
+            <div class="flex w-[800px] gap-5 mx-auto">
               <input
-                class="bg-[#323846] p-2 rounded w-full"
+                class="bg-[#323846] px-3 py-2 rounded w-[50%]"
                 type="text"
                 placeholder="Your Name"
                 required
               />
-              <!-- Email -->
               <input
-                class="bg-[#323846] p-2 rounded w-full"
+                class="bg-[#323846] px-3 py-2 rounded w-[50%]"
                 type="email"
-                placeholder="Your Email"
+                placeholder="Email Address"
                 required
               />
             </div>
-            <div class="flex gap-4">
-              <!-- Contact -->
+            <div class="flex w-[800px] gap-5 mx-auto">
               <input
-                class="bg-[#323846] p-2 rounded w-full"
+                class="bg-[#323846] px-3 py-2 rounded w-[50%]"
                 type="tel"
                 placeholder="Your Contact Number"
                 required
               />
-              <!-- email subject  -->
               <input
-                class="bg-[#323846] p-2 rounded w-full"
+                class="bg-[#323846] px-3 py-2 rounded w-[50%]"
                 type="email"
                 placeholder="Email Subject"
               />
             </div>
-            <!-- message  -->
-            <textarea
-              class="bg-[#323846] h-36 p-2 rounded w-full"
-              id="message"
-              name="message"
-              cols="152"
-              placeholder="Your Message"
-              required
-            ></textarea>
+            <div class="w-[800px] mx-auto">
+              <textarea
+                class="bg-[#323846] h-40 p-2 rounded w-[100%]"
+                id="message"
+                name="message"
+                cols="152"
+                placeholder="Your Message"
+                required
+              ></textarea>
+            </div>
           </div>
           <!-- button -->
           <div class="text-center mt-6 pb-10">
@@ -277,14 +272,7 @@
         <p class="px-5 py-3 text-gray-400">
           copyright © 2024 by Ali Rao| All Right Reserved
         </p>
-        <div class="px-32 bg-slate-400">
-          <a class="px-1 text-[#00EFFF] text-3xl mb-1" id="goToTopButton"
-            ><i class="ri-arrow-up-double-fill"></i
-          ></a>
-        </div>
       </div>
-      <div class="h-screen"></div>
     </div>
-    <script src="script.js"></script>
   </body>
 </html>
