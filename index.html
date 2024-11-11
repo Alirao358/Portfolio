@@ -15,6 +15,7 @@
       type="image/x-icon"
     />
   </head>
+
   <body class="text-white">
     <!-- navbar -->
     <div class="bg-[#20242D] h-screen">
@@ -130,7 +131,7 @@
       <div class="flex h-[30rem] w-full items-center justify-center pt-8">
         <div class="flex items-center gap-8">
           <div
-            class="p-2 h-[85%] w-72 rounded-3xl bg-[#323846] border border-transparent transition-all duration-500 hover:border-[#00EFFF] hover:transform"
+            class="p-2 h-[85%] w-72 rounded-3xl bg-[#323846] border border-transparent transition-all duration-500 hover:border-[#00EFFF] hover:scale-110"
           >
             <a class="flex justify-center text-[#00EFFF] text-4xl" href=""
               ><i class="ri-code-s-slash-line"></i>
@@ -151,7 +152,7 @@
             </button>
           </div>
           <div
-            class="p-2 h-[85%] w-72 rounded-3xl bg-[#323846] border border-transparent transition-all duration-500 hover:border-[#00EFFF]"
+            class="p-2 h-[85%] w-72 rounded-3xl bg-[#323846] border border-transparent transition-all duration-500 hover:border-[#00EFFF] hover:scale-110"
           >
             <a class="flex justify-center text-[#00EFFF] text-4xl" href=""
               ><i class="ri-mark-pen-line"></i
@@ -172,7 +173,7 @@
             </button>
           </div>
           <div
-            class="p-2 h-[85%] w-72 rounded-3xl bg-[#323846] border border-transparent transition-all duration-500 hover:border-[#00EFFF]"
+            class="p-2 h-[85%] w-72 rounded-3xl bg-[#323846] border border-transparent transition-all duration-500 hover:border-[#00EFFF] hover:scale-110"
           >
             <a class="flex justify-center text-[#00EFFF] text-4xl" href=""
               ><i class="ri-bar-chart-fill"></i
@@ -196,83 +197,178 @@
         </div>
       </div>
     </div>
-    <div>
-      <div class="bg-[#323846]">
+    <div class="bg-[#323846] h-screen">
+      <div>
         <div>
           <h1 class="text-center pt-5 pb-11 font-bold text-3xl" id="portfolio">
             Latest
             <span class="font-bold text-3xl text-[#00EFFF]">Project</span>
           </h1>
         </div>
-        <!-- First Image Box -->
       </div>
-    </div>
-    <div>
-      <div>
-        <div class="bg-[#20242D]">
-          <div>
-            <h1 class="text-center pt-10 pb-6 font-bold text-3xl" id="contact">
-              Contact
-              <span class="font-bold text-3xl text-[#00EFFF]">Me!</span>
-            </h1>
+      <!-- IMAGE  -->
+      <div class="flex justify-center gap-16">
+        <div
+          class="bg-center group relative overflow-hidden bg-cover size-56 rounded-xl m-2"
+        >
+          <img
+            src="portfolio1.jpg"
+            class="w-full h-full object-cover group-hover:scale-110 transition-all duration-300"
+            alt=""
+          />
+          <div
+            class="absolute inset-0 bg-gradient-to-t to-transparent from-[#00EFFF] translate-y-full group-hover:translate-y-0 transition-all duration-300 ease-in text-center pt-16 text-white"
+          >
+            <p class="font-bold">Web Design</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+            <a href="" class="text-2xl"
+              ><i class="ri-external-link-fill"></i
+            ></a>
           </div>
-          <div class="p-28 flex flex-col gap-5 pt-7">
-            <div class="flex w-[800px] gap-5 mx-auto">
-              <input
-                class="bg-[#323846] px-3 py-2 rounded w-[50%]"
-                type="text"
-                placeholder="Your Name"
-                required
-              />
-              <input
-                class="bg-[#323846] px-3 py-2 rounded w-[50%]"
-                type="email"
-                placeholder="Email Address"
-                required
-              />
-            </div>
-            <div class="flex w-[800px] gap-5 mx-auto">
-              <input
-                class="bg-[#323846] px-3 py-2 rounded w-[50%]"
-                type="tel"
-                placeholder="Your Contact Number"
-                required
-              />
-              <input
-                class="bg-[#323846] px-3 py-2 rounded w-[50%]"
-                type="email"
-                placeholder="Email Subject"
-              />
-            </div>
-            <div class="w-[800px] mx-auto">
-              <textarea
-                class="bg-[#323846] h-40 p-2 rounded w-[100%]"
-                id="message"
-                name="message"
-                cols="152"
-                placeholder="Your Message"
-                required
-              ></textarea>
-            </div>
+        </div>
+        <div
+          class="bg-center group relative overflow-hidden bg-cover size-56 rounded-xl m-2"
+        >
+          <img
+            src="portfolio2.jpg"
+            class="w-full h-full object-cover group-hover:scale-110 transition-all duration-300"
+            alt=""
+          />
+          <div
+            class="absolute inset-0 bg-gradient-to-t to-transparent from-[#00EFFF] translate-y-full group-hover:translate-y-0 transition-all duration-300 ease-in text-center pt-16 text-white"
+          >
+            <p class="font-bold">Web Design</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+            <a href="" class="text-2xl"><i class="ri-external-link-fill"></i></a>
           </div>
-          <!-- button -->
-          <div class="text-center mt-6 pb-10">
-            <button
-              type="submit"
-              class="bg-[#00EFFF] text-black px-6 py-3 rounded-full text-xl font-semibold hover:bg-[#00c8cc] transition"
-            >
-              Send Message
-            </button>
+        </div>
+        <div
+          class="bg-center group relative overflow-hidden bg-cover size-56 rounded-xl m-2"
+        >
+          <img
+            src="portfolio3.jpg"
+            class="w-full h-full object-cover group-hover:scale-110 transition-all duration-300"
+            alt=""
+          />
+          <div
+            class="absolute inset-0 bg-gradient-to-t to-transparent from-[#00EFFF] translate-y-full group-hover:translate-y-0 transition-all duration-300 ease-in text-center pt-16 text-white"
+          >
+            <p class="font-bold">Web Design</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+            <a href="" class="text-2xl"><i class="ri-external-link-fill"></i></a>
+          </div>
+        </div>
+      </div>
+      <!-- image section 2 -->
+      <div class="flex justify-center gap-16">
+        <div
+          class="bg-center group relative overflow-hidden bg-cover size-56 rounded-xl m-2"
+        >
+          <img
+            src="portfolio4.jpg"
+            class="w-full h-full object-cover group-hover:scale-110 transition-all duration-300"
+            alt=""
+          />
+          <div
+            class="absolute inset-0 bg-gradient-to-t to-transparent from-[#00EFFF] translate-y-full group-hover:translate-y-0 transition-all duration-300 ease-in text-center pt-16 text-white"
+          >
+            <p class="font-bold">Web Design</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+            <a href="" class="text-2xl"><i class="ri-external-link-fill"></i></a>
+          </div>
+        </div>
+        <div
+          class="bg-center group relative overflow-hidden bg-cover size-56 rounded-xl m-2"
+        >
+          <img
+            src="portfolio5.jpg"
+            class="w-full h-full object-cover group-hover:scale-110 transition-all duration-300"
+            alt=""
+          />
+          <div
+            class="absolute inset-0 bg-gradient-to-t to-transparent from-[#00EFFF] translate-y-full group-hover:translate-y-0 transition-all duration-300 ease-in text-center pt-16 text-white"
+          >
+            <p class="font-bold">Web Design</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+            <a href="" class="text-2xl"><i class="ri-external-link-fill"></i></a>
+          </div>
+        </div>
+        <div
+          class="bg-center group relative overflow-hidden bg-cover size-56 rounded-2xl m-2"
+        >
+          <img
+            src="portfolio6.jpg"
+            class="w-full h-full object-cover group-hover:scale-110 transition-all duration-300"
+            alt=""
+          />
+          <div
+            class="absolute inset-0 bg-gradient-to-t to-transparent from-[#00EFFF] translate-y-full group-hover:translate-y-0 transition-all duration-300 ease-in text-center pt-16 text-white"
+          >
+            <p class="font-bold">Web Design</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+            <a href="" class="text-2xl"><i class="ri-external-link-fill"></i></a>
           </div>
         </div>
       </div>
     </div>
-    <div>
-      <div class="bg-[#323846] flex justify-around">
-        <p class="px-5 py-3 text-gray-400">
-          copyright © 2024 by Ali Rao| All Right Reserved
-        </p>
+    <!-- Repeatable Card Layout Ends Here -->
+    <div class="bg-[#20242D]">
+      <h1 class="text-center pt-10 pb-6 font-bold text-3xl" id="contact">
+        Contact <span class="font-bold text-3xl text-[#00EFFF]">Me!</span>
+      </h1>
+      <div class="p-28 flex flex-col gap-5 pt-7">
+        <div class="flex w-[800px] gap-5 mx-auto">
+          <input
+            class="bg-[#323846] px-3 py-2 rounded w-[50%]"
+            type="text"
+            placeholder="Your Name"
+            required
+          />
+          <input
+            class="bg-[#323846] px-3 py-2 rounded w-[50%]"
+            type="email"
+            placeholder="Email Address"
+            required
+          />
+        </div>
+        <div class="flex w-[800px] gap-5 mx-auto">
+          <input
+            class="bg-[#323846] px-3 py-2 rounded w-[50%]"
+            type="tel"
+            placeholder="Your Contact Number"
+            required
+          />
+          <input
+            class="bg-[#323846] px-3 py-2 rounded w-[50%]"
+            type="email"
+            placeholder="Email Subject"
+          />
+        </div>
+        <div class="w-[800px] mx-auto">
+          <textarea
+            class="bg-[#323846] h-40 p-2 rounded w-[100%]"
+            id="message"
+            name="message"
+            cols="152"
+            placeholder="Your Message"
+            required
+          ></textarea>
+        </div>
       </div>
+      <div class="text-center mt-6 pb-10">
+        <button
+          type="submit"
+          class="bg-[#00EFFF] text-black px-6 py-3 rounded-full text-xl font-semibold hover:bg-[#00c8cc] transition"
+        >
+          Send Message
+        </button>
+      </div>
+    </div>
+
+    <div class="bg-[#323846] flex justify-around">
+      <p class="px-5 py-3 text-gray-400">
+        © 2024 by Ali Rao | All Rights Reserved
+      </p>
     </div>
   </body>
 </html>
