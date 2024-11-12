@@ -38,19 +38,18 @@
 
       <!-- header  -->
       <div class="px-11 flex h-screen">
-        <div class="w-[50%] mt-24 mx-auto">
-          <h3 class="font-semibold text-2xl">Hello,It's Me</h3>
-          <h1 class="text-5xl font-bold mt-1">ALI RAO</h1>
-          <h2 class="font-semibold text-2xl mt-2">
-            And I'm a
-            <span class="font-semibold text-2xl text-[#00EFFF]"
+        <div class="w-[50%] mt-24 mx-auto space-y-3">
+          <h3 class="font-bold text-3xl">Hello,It's Me</h3>
+          <h1 class="text-5xl font-bold mt-1">Muhammad Ali Rao</h1>
+          <h2 class="font-bold text-3xl mt-2">
+            And I'm
+            <span class="font-bold text-3xl text-[#00EFFF]"
               >Frontend Developer</span
             >
           </h2>
-          <p class="text-gray-200 text-1xl mt-3">
+          <p class="text-custom mt-3">
             I'm Ali Rao, a Front-End Developer skilled in HTML, CSS, JavaScript,
-            Node.js, Bootstrap, and React.js. With a Software Engineering
-            background and a Cybersecurity Essentials certificate.
+            Node.js, Bootstrap, and React.js.
           </p>
           <div
             class="flex gap-8 text-2xl mt-3 [&>*:hover]:text-black [&>*:hover]:bg-[#00EFFF]"
@@ -59,36 +58,37 @@
               class="border border-[#00EFFF] rounded-full px-2 py-1 text-[#00EFFF] transition-all duration-500"
               href=""
             >
-              <i class="ri-facebook-circle-fill"></i
-            ></a>
+              <i class="ri-facebook-line"></i>
+            </a>
             <a
               class="border border-[#00EFFF] rounded-full px-2 py-1 text-[#00EFFF] transition-all duration-500"
               href=""
             >
-              <i class="ri-twitter-x-fill"></i
-            ></a>
+              <i class="ri-twitter-line"></i>
+            </a>
             <a
               class="border border-[#00EFFF] rounded-full px-2 py-1 text-[#00EFFF] transition-all duration-500"
               href=""
             >
-              <i class="ri-linkedin-box-fill"></i
-            ></a>
+              <i class="ri-linkedin-line"></i>
+            </a>
             <a
               class="border border-[#00EFFF] rounded-full px-2 py-1 text-[#00EFFF] transition-all duration-500"
               href=""
             >
-              <i class="ri-instagram-line"></i
-            ></a>
+              <i class="ri-instagram-line"></i>
+            </a>
           </div>
           <!-- button  -->
           <div>
             <button
-              class="bg-[#00EFFF] px-3 pb-1 flex justify-center py-2 rounded-full text-black border-0 my-6 shadow-[#00EFFF] shadow-md"
+              class="bg-[#00EFFF] w-40 h-9 mt-4 rounded-full text-black border-0 shadow-lg shadow-[#00EFFF] text-center font-semibold hover:bg-[#00C8CC] hover:shadow-transparent"
             >
-              Downlod CV
+              Download CV
             </button>
           </div>
         </div>
+
         <div class="w-[50%] flex">
           <div
             class="bg-[#00EAFB] overflow-hidden top-6 left-40 relative w-96 rounded-full h-96"
@@ -106,93 +106,118 @@
         class="bg-[#00EAFB] overflow-hidden top-12 flex justify-center right-10 relative w-80 rounded-full h-80"
       >
         <div class="absolute flex align-middle bottom-[-13px]">
-          <img src="image.png" alt="" />
+          <img src="image.png" class="rotate-3" alt="" />
         </div>
       </div>
-      <div class="w-[50%] mt-16 h-100 w-100 px-13 py-10">
-        <h1 class="font-bold text-4xl">
-          About <span class="font-semibold text-[#00EFFF] text-4xl">ME</span>
-        </h1>
-        <h3 class="font-semibold text-2xl">Frontend Developer!</h3>
-        <p class="text-gray-300 mt-4 font-sans text-1xl">
-          I'm Ali Rao, a Front-End Developer skilled in HTML, CSS, JavaScript,
-          Node.js, Bootstrap, and React.js. With a Software Engineering
-          background and a Cybersecurity Essentials certificate.
-        </p>
+      <div class="w-[50%] mt-16 px-13 py-10 space-y-2">
+        <div>
+          <h1 class="text-4xl font-bold">
+            About <span class="text-4xl font-bold text-[#00EFFF]">Me</span>
+          </h1>
+        </div>
+        <div>
+          <div class="mb-3">
+            <h3 class="font-bold text-xl">Frontend Developer!</h3>
+          </div>
+          <div>
+            <p class="text-gray-300 font-sans text-1xl pt-1">
+              I'm Ali Rao, a Front-End Developer skilled in HTML, CSS,
+              JavaScript, Node.js, Bootstrap, and React.js. With a Software
+              Engineering background and a Cybersecurity Essentials certificate.
+            </p>
+          </div>
+        </div>
+        <div>
+          <button
+            class="bg-[#00EFFF] w-40 h-9 mt-4 rounded-full text-black border-0 shadow-md shadow-[#00EFFF] text-center font-semibold transition-all duration-300 hover:shadow-transparent"
+          >
+            Read More
+          </button>
+        </div>
       </div>
     </div>
     <!-- Services -->
     <div class="px-20 bg-[#20242D] h-screen" id="services">
       <div>
-        <h1 class="text-center pt-16 font-bold text-3xl">
+        <h1 class="text-center pt-20 font-bold text-3xl">
           Our <span class="font-bold text-3xl text-[#00EFFF]">Services</span>
         </h1>
       </div>
-      <div class="flex h-[30rem] w-full items-center justify-center pt-8">
+      <div class="flex h-[30rem] w-full items-center justify-center">
         <div class="flex items-center gap-8">
+          <!-- Web Development Card -->
           <div
-            class="p-2 h-[85%] w-72 rounded-3xl bg-[#323846] border border-transparent transition-all duration-500 hover:border-[#00EFFF] hover:scale-110"
+            class="p-4 h-[85%] w-72 rounded-3xl bg-[#323846] border border-[#323846] transition-all duration-500 hover:border-[#00EFFF] hover:scale-105 flex flex-col justify-between"
           >
-            <a class="flex justify-center text-[#00EFFF] text-4xl" href=""
-              ><i class="ri-code-s-slash-line"></i>
+            <a class="flex justify-center text-[#00EFFF] text-4xl" href="">
+              <i class="ri-code-s-slash-line"></i>
             </a>
             <p
-              class="flex justify-center my-6 text-[#00EFFF] text-2xl font-bold"
+              class="flex justify-center my-4 text-[#00EFFF] text-2xl font-bold"
             >
               Web Development
             </p>
-            <p class="ml-6 my-4 text-gray-300 font-sans">
+            <p class="mx-4 text-gray-300 font-sans text-center mb-5">
               Building and maintaining websites to ensure functionality, user
               experience, and security.
             </p>
-            <button
-              class="bg-[#00EFFF] px-3 py-2 rounded-full text-black border-0 my-14 shadow-[#00EFFF] shadow-md font-semibold ml-14"
-            >
-              Read More
-            </button>
+            <div class="flex justify-center">
+              <button
+              class="bg-[#00EFFF] w-40 h-9 mt-4 rounded-full text-black border-0 shadow-md shadow-[#00EFFF] text-center font-semibold transition-all duration-300 hover:shadow-transparent"
+              >
+                Read More
+              </button>
+            </div>
           </div>
+
+          <!-- Graphic Design Card -->
           <div
-            class="p-2 h-[85%] w-72 rounded-3xl bg-[#323846] border border-transparent transition-all duration-500 hover:border-[#00EFFF] hover:scale-110"
+            class="p-4 h-[85%] w-72 rounded-3xl bg-[#323846] border border-[#323846] transition-all duration-500 hover:border-[#00EFFF] hover:scale-105 flex flex-col justify-between"
           >
-            <a class="flex justify-center text-[#00EFFF] text-4xl" href=""
-              ><i class="ri-mark-pen-line"></i
-            ></a>
+            <a class="flex justify-center text-[#00EFFF] text-4xl" href="">
+              <i class="ri-mark-pen-line"></i>
+            </a>
             <p
-              class="flex justify-center my-6 text-[#00EFFF] text-2xl font-bold"
+              class="flex justify-center my-4 text-[#00EFFF] text-2xl font-bold"
             >
               Graphic Design
             </p>
-            <p class="ml-6 my-4 text-gray-300 font-sans">
-              Promoting brands and products online via social media, search
-              engines, and other digital channels to reach target audiences.
+            <p class="mx-4 text-gray-300 font-sans text-center mb-5">
+              Crafting engaging visuals and layouts to convey brand messages and
+              improve user experience.
             </p>
-            <button
-              class="bg-[#00EFFF] px-3 py-2 rounded-full text-black border-0 my-14 shadow-[#00EFFF] shadow-md font-semibold ml-14"
-            >
-              Read More
-            </button>
+            <div class="flex justify-center">
+              <button
+              class="bg-[#00EFFF] w-40 h-9 mt-4 rounded-full text-black border-0 shadow-md shadow-[#00EFFF] text-center font-semibold transition-all duration-300 hover:shadow-transparent"
+              >
+                Read More
+              </button>
+            </div>
           </div>
-          <div
-            class="p-2 h-[85%] w-72 rounded-3xl bg-[#323846] border border-transparent transition-all duration-500 hover:border-[#00EFFF] hover:scale-110"
-          >
-            <a class="flex justify-center text-[#00EFFF] text-4xl" href=""
-              ><i class="ri-bar-chart-fill"></i
-            ></a>
-            <p
-              class="flex justify-center my-6 text-[#00EFFF] text-2xl font-bold"
-            >
-              Degital Marketing
-            </p>
-            <p class="ml-6 mt-4 text-gray-300 font-sans">
-              Promoting brands and products online via social media, search
-              engines, and other digital channels to reach target audiences.
-            </p>
 
-            <button
-              class="bg-[#00EFFF] px-3 py-2 rounded-full text-black my-14 shadow-[#00EFFF] shadow-md font-semibold ml-14"
+          <!-- Digital Marketing Card -->
+          <div
+            class="p-4 h-[85%] w-72 rounded-3xl bg-[#323846] border border-[#323846] transition-all duration-500 hover:border-[#00EFFF] hover:scale-105 flex flex-col justify-between"
+          >
+            <a class="flex justify-center text-[#00EFFF] text-4xl" href="">
+              <i class="ri-bar-chart-fill"></i>
+            </a>
+            <p
+              class="flex justify-center my-4 text-[#00EFFF] text-2xl font-bold"
             >
-              Read More
-            </button>
+              Digital Marketing
+            </p>
+            <p class="mx-4 text-gray-300 font-sans text-center mb-5">
+              Promoting brands and products online via social media, search
+              engines, and other digital channels.
+            </p>
+            <div class="flex justify-center">
+              <button
+                class="bg-[#00EFFF] w-40 h-9 mt-4 rounded-full text-black border-0 shadow-md shadow-[#00EFFF] text-center font-semibold transition-all duration-300 hover:shadow-transparent"
+              >
+                Read More
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -209,7 +234,7 @@
       <!-- IMAGE  -->
       <div class="flex justify-center gap-16">
         <div
-          class="bg-center group relative overflow-hidden bg-cover size-56 rounded-xl m-2"
+          class="bg-center group relative overflow-hidden bg-cover h-44 w-64 rounded-xl m-2"
         >
           <img
             src="portfolio1.jpg"
@@ -217,17 +242,17 @@
             alt=""
           />
           <div
-            class="absolute inset-0 bg-gradient-to-t to-transparent from-[#00EFFF] translate-y-full group-hover:translate-y-0 transition-all duration-300 ease-in text-center pt-16 text-white"
+            class="absolute inset-0 bg-gradient-to-t to-transparent from-[#00EFFF] translate-y-full group-hover:translate-y-0 transition-all duration-300 ease-in text-center pt-5 flex flex-col gap-3 text-white"
           >
             <p class="font-bold">Web Design</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-            <a href="" class="text-2xl"
+            <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+            <a href="" class="text-2xl border w-fit mx-28 border-white bg-white rounded-full px-2 py-1 text-black"
               ><i class="ri-external-link-fill"></i
             ></a>
           </div>
         </div>
         <div
-          class="bg-center group relative overflow-hidden bg-cover size-56 rounded-xl m-2"
+          class="bg-center group relative overflow-hidden bg-cover h-44 w-64 rounded-xl m-2"
         >
           <img
             src="portfolio2.jpg"
@@ -235,15 +260,17 @@
             alt=""
           />
           <div
-            class="absolute inset-0 bg-gradient-to-t to-transparent from-[#00EFFF] translate-y-full group-hover:translate-y-0 transition-all duration-300 ease-in text-center pt-16 text-white"
+            class="absolute inset-0 bg-gradient-to-t to-transparent from-[#00EFFF] translate-y-full group-hover:translate-y-0 transition-all duration-300 ease-in text-center pt-5 flex flex-col gap-3 text-white"
           >
             <p class="font-bold">Web Design</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-            <a href="" class="text-2xl"><i class="ri-external-link-fill"></i></a>
+            <a href="" class="text-2xl border w-fit mx-28 border-white bg-white rounded-full px-2 py-1 text-black"
+              ><i class="ri-external-link-fill"></i
+            ></a>
           </div>
         </div>
         <div
-          class="bg-center group relative overflow-hidden bg-cover size-56 rounded-xl m-2"
+          class="bg-center group relative overflow-hidden bg-cover h-44 w-64 rounded-xl m-2"
         >
           <img
             src="portfolio3.jpg"
@@ -251,18 +278,20 @@
             alt=""
           />
           <div
-            class="absolute inset-0 bg-gradient-to-t to-transparent from-[#00EFFF] translate-y-full group-hover:translate-y-0 transition-all duration-300 ease-in text-center pt-16 text-white"
+            class="absolute inset-0 bg-gradient-to-t to-transparent from-[#00EFFF] translate-y-full group-hover:translate-y-0 transition-all duration-300 ease-in text-center pt-5 flex flex-col gap-3 text-white"
           >
             <p class="font-bold">Web Design</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-            <a href="" class="text-2xl"><i class="ri-external-link-fill"></i></a>
+            <a href="" class="text-2xl border w-fit mx-28 border-white bg-white rounded-full px-2 py-1 text-black "
+              ><i class="ri-external-link-fill"></i
+            ></a>
           </div>
         </div>
       </div>
       <!-- image section 2 -->
       <div class="flex justify-center gap-16">
         <div
-          class="bg-center group relative overflow-hidden bg-cover size-56 rounded-xl m-2"
+          class="bg-center group relative overflow-hidden bg-cover h-44 w-64 rounded-xl m-2"
         >
           <img
             src="portfolio4.jpg"
@@ -270,15 +299,17 @@
             alt=""
           />
           <div
-            class="absolute inset-0 bg-gradient-to-t to-transparent from-[#00EFFF] translate-y-full group-hover:translate-y-0 transition-all duration-300 ease-in text-center pt-16 text-white"
+            class="absolute inset-0 bg-gradient-to-t to-transparent from-[#00EFFF] translate-y-full group-hover:translate-y-0 transition-all duration-300 ease-in text-center pt-5 flex flex-col gap-3 text-white"
           >
             <p class="font-bold">Web Design</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-            <a href="" class="text-2xl"><i class="ri-external-link-fill"></i></a>
+            <a href="" class="text-2xl border w-fit mx-28 border-white bg-white rounded-full px-2 py-1 text-black"
+              ><i class="ri-external-link-fill"></i
+            ></a>
           </div>
         </div>
         <div
-          class="bg-center group relative overflow-hidden bg-cover size-56 rounded-xl m-2"
+          class="bg-center group relative overflow-hidden bg-cover h-44 w-64 rounded-xl m-2"
         >
           <img
             src="portfolio5.jpg"
@@ -286,15 +317,17 @@
             alt=""
           />
           <div
-            class="absolute inset-0 bg-gradient-to-t to-transparent from-[#00EFFF] translate-y-full group-hover:translate-y-0 transition-all duration-300 ease-in text-center pt-16 text-white"
+            class="absolute inset-0 bg-gradient-to-t to-transparent from-[#00EFFF] translate-y-full group-hover:translate-y-0 transition-all duration-300 ease-in text-center pt-5 flex flex-col gap-3 text-white"
           >
             <p class="font-bold">Web Design</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-            <a href="" class="text-2xl"><i class="ri-external-link-fill"></i></a>
+            <a href="" class="text-2xl border w-fit mx-28 border-white bg-white rounded-full px-2 py-1 text-black"
+              ><i class="ri-external-link-fill"></i
+            ></a>
           </div>
         </div>
         <div
-          class="bg-center group relative overflow-hidden bg-cover size-56 rounded-2xl m-2"
+          class="bg-center group relative overflow-hidden bg-cover h-44 w-64 rounded-2xl m-2"
         >
           <img
             src="portfolio6.jpg"
@@ -302,11 +335,13 @@
             alt=""
           />
           <div
-            class="absolute inset-0 bg-gradient-to-t to-transparent from-[#00EFFF] translate-y-full group-hover:translate-y-0 transition-all duration-300 ease-in text-center pt-16 text-white"
+            class="absolute inset-0 bg-gradient-to-t to-transparent from-[#00EFFF] translate-y-full group-hover:translate-y-0 transition-all duration-300 ease-in text-center pt-5 flex flex-col gap-3 text-white"
           >
             <p class="font-bold">Web Design</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-            <a href="" class="text-2xl"><i class="ri-external-link-fill"></i></a>
+            <a href="" class="text-2xl border w-fit mx-28 border-white bg-white rounded-full px-2 py-1 text-black"
+              ><i class="ri-external-link-fill"></i
+            ></a>
           </div>
         </div>
       </div>
@@ -365,10 +400,15 @@
       </div>
     </div>
 
-    <div class="bg-[#323846] flex justify-around">
+    <div class="bg-[#323846] flex justify-around items-center">
       <p class="px-5 py-3 text-gray-400">
         © 2024 by Ali Rao | All Rights Reserved
       </p>
+      <button
+        class="px-2 py1 bg-[#00EAFB] text-black rounded hover:bg-[#00C8CC]"
+      >
+      <i class="ri-arrow-up-line"></i>
+      </button>
     </div>
   </body>
 </html>
