@@ -20,13 +20,11 @@
     <!-- navbar -->
     <div class="bg-[#20242D] h-screen">
       <nav>
-        <div
-          class="bg-[#20242D] justify-between sm: flex gap-10 w-100 px-11 py-8"
-        >
+        <div class="bg-[#20242D] justify-between flex gap-10 w-100 px-11 py-8">
           <div class="text-white font-bold text-3xl hover:text-[#00EFFF]">
             <p class="text-[##10B8C3]">A<span>R</span></p>
           </div>
-          <div class="text-white flex">
+          <div class="text-white sm:flex hidden">
             <ul class="flex gap-7 text-xl [&>*:hover]:text-[#00EFFF]" id="home">
               <li><a href="#home">Home</a></li>
               <li><a href="#about">About</a></li>
@@ -35,14 +33,17 @@
               <li><a href="#contact">Contact</a></li>
             </ul>
           </div>
+            <i class="ri-menu-line block text-3xl sm:hidden"></i>
         </div>
       </nav>
 
       <!-- header  -->
-      <div class="px-11 sm:flex-row flex-col  flex h-screen">
+      <div
+        class="px-11 sm:flex-row flex-col flex sm:h-screen h-full mb-5 sm:mb-0"
+      >
         <div class="w-[100%] sm:w-[50%] mt-8 sm:mt-24 mx-auto space-y-3">
-          <h3 class="font-bold text-xl sm:text-3xl ">Hello,It's Me</h3>
-          <h1 class="text-3xl  sm:text-5xl font-bold mt-1">Muhammad Ali Rao</h1>
+          <h3 class="font-bold text-xl sm:text-3xl">Hello,It's Me</h3>
+          <h1 class="text-3xl sm:text-5xl font-bold mt-1">Muhammad Ali Rao</h1>
           <h2 class="font-bold text-3xl mt-2">
             And I'm
             <span class="font-bold text-3xl text-[#00EFFF]"
@@ -54,7 +55,7 @@
             Node.js, Bootstrap, and React.js.
           </p>
           <div
-            class="flex gap-8 text-2xl mt-3 [&>*:hover]:text-black [&>*:hover]:bg-[#00EFFF]"
+            class="flex sm:gap-8 gap-11 text-2xl mt-3 [&>*:hover]:text-black [&>*:hover]:bg-[#00EFFF]"
           >
             <a
               class="border border-[#00EFFF] rounded-full px-2 py-1 text-[#00EFFF] transition-all duration-500"
@@ -84,7 +85,7 @@
           <!-- button  -->
           <div>
             <button
-            class="bg-[#00EFFF] w-40 h-9 mt-2 mb-2 rounded-full text-black border-0 shadow-md shadow-[#00EFFF] text-center font-semibold transition-all duration-300 hover:shadow-transparent"
+              class="bg-[#00EFFF] w-40 h-9 mt-2 mb-2 ml-14 sm:ml-0 rounded-full text-black border-0 shadow-md shadow-[#00EFFF] text-center font-semibold transition-all duration-300 hover:shadow-transparent"
             >
               Download CV
             </button>
@@ -93,25 +94,28 @@
 
         <div class="w-[100%] sm:w-[50%] flex">
           <div
-            class="bg-[#00EAFB] overflow-hidden top-6 left-40 relative w-96 rounded-full h-96"
+            class="bg-[#00EAFB] overflow-hidden top-6 left-0 right-10 ml-12 sm:ml-0 sm:h-96 sm:left-40 relative sm:w-96 rounded-full h-52 w-52"
           >
             <div class="absolute bottom-[-20px]">
-              <img src="./image.png" class=" " alt="" />
+              <img src="./image.png" class="rotate-3" alt="" />
             </div>
           </div>
         </div>
       </div>
     </div>
     <!-- about -->
-    <div class="px-20 justify-center flex bg-[#323846] h-screen" id="about">
+    <div
+      class="px-20 justify-between flex bg-[#323846] h-full sm:h-screen"
+      id="about"
+    >
       <div
-        class="bg-[#00EAFB] overflow-hidden top-12 flex justify-center right-10 relative w-80 rounded-full h-80"
+        class="hidden bg-[#00EAFB] overflow-hidden top-12 sm:flex justify-center right-10 relative sm:w-80 rounded-full sm:h-80 h-32 w-32"
       >
         <div class="absolute flex align-middle bottom-[-13px]">
           <img src="image.png" class="rotate-3" alt="" />
         </div>
       </div>
-      <div class="w-[50%] mt-16 px-13 py-10 space-y-2">
+      <div class="sm:w-[50%] mt-16 px-13 py-10 space-y-2 w-[100%]">
         <div>
           <h1 class="text-4xl font-bold">
             About <span class="text-4xl font-bold text-[#00EFFF]">Me</span>
@@ -139,17 +143,19 @@
       </div>
     </div>
     <!-- Services -->
-    <div class="px-20 bg-[#20242D] h-screen" id="services">
+    <div class="sm:px-20 px-7 bg-[#20242D] h-[150vh] sm:h-screen" id="services">
       <div>
-        <h1 class="text-center pt-20 font-bold text-3xl">
+        <h1 class="text-center pt-7 sm:pt-10 block font-bold text-3xl">
           Our <span class="font-bold text-3xl text-[#00EFFF]">Services</span>
         </h1>
       </div>
-      <div class="flex h-[30rem] w-full items-center justify-center">
-        <div class="flex items-center gap-8">
+      <div
+        class="flex sm:h-full h-screen pt-72 sm:pt-0 w-full items-center justify-center"
+      >
+        <div class="flex items-center gap-8 flex-col sm:flex-row">
           <!-- Web Development Card -->
           <div
-            class="p-4 h-[85%] w-72 rounded-3xl bg-[#323846] border border-[#323846] transition-all duration-500 hover:border-[#00EFFF] hover:scale-105 flex flex-col justify-between"
+            class="p-4 sm:h-[33%] sm:w-72 h-[50%] w-[100%] rounded-3xl bg-[#323846] border border-[#323846] transition-all duration-500 hover:border-[#00EFFF] hover:scale-105 flex flex-col justify-between"
           >
             <a class="flex justify-center text-[#00EFFF] text-4xl" href="">
               <i class="ri-code-s-slash-line"></i>
@@ -165,7 +171,7 @@
             </p>
             <div class="flex justify-center">
               <button
-              class="bg-[#00EFFF] w-40 h-9 mt-2 mb-2 rounded-full text-black border-0 shadow-md shadow-[#00EFFF] text-center font-semibold transition-all duration-300 hover:shadow-transparent"
+                class="bg-[#00EFFF] w-40 h-9 mt-2 mb-2 rounded-full text-black border-0 shadow-md shadow-[#00EFFF] text-center font-semibold transition-all duration-300 hover:shadow-transparent"
               >
                 Read More
               </button>
@@ -174,7 +180,7 @@
 
           <!-- Graphic Design Card -->
           <div
-            class="p-4 h-[85%] w-72 rounded-3xl bg-[#323846] border border-[#323846] transition-all duration-500 hover:border-[#00EFFF] hover:scale-105 flex flex-col justify-between"
+            class="p-4 sm:h-[50%] h-[33%] sm:w-72 w-[100%] rounded-3xl bg-[#323846] border border-[#323846] transition-all duration-500 hover:border-[#00EFFF] hover:scale-105 flex flex-col justify-between"
           >
             <a class="flex justify-center text-[#00EFFF] text-4xl" href="">
               <i class="ri-mark-pen-line"></i>
@@ -199,7 +205,7 @@
 
           <!-- Digital Marketing Card -->
           <div
-            class="p-4 h-[85%] w-72 rounded-3xl bg-[#323846] border border-[#323846] transition-all duration-500 hover:border-[#00EFFF] hover:scale-105 flex flex-col justify-between"
+            class="p-4 sm:h-[50%] h-[33%] sm:w-72 w-[100%] rounded-3xl bg-[#323846] border border-[#323846] transition-all duration-500 hover:border-[#00EFFF] hover:scale-105 flex flex-col justify-between"
           >
             <a class="flex justify-center text-[#00EFFF] text-4xl" href="">
               <i class="ri-bar-chart-fill"></i>
@@ -224,7 +230,7 @@
         </div>
       </div>
     </div>
-    <div class="bg-[#323846] h-screen">
+    <div class="bg-[#323846] h-full sm:h-screen">
       <div>
         <div>
           <h1 class="text-center pt-5 pb-11 font-bold text-3xl" id="portfolio">
@@ -234,9 +240,11 @@
         </div>
       </div>
       <!-- IMAGE  -->
-      <div class="flex justify-center gap-16">
+      <div
+        class="flex justify-center sm:gap-16 gap-3 sm:ms-0 ms-16 flex-col sm:flex-row"
+      >
         <div
-          class="bg-center group relative overflow-hidden bg-cover h-44 w-64 rounded-xl m-2"
+          class="bg-center group relative overflow-hidden bg-cover sm:h-44 sm:w-64 h-60 w-60 rounded-xl m-2"
         >
           <img
             src="portfolio1.jpg"
@@ -258,7 +266,7 @@
           </div>
         </div>
         <div
-          class="bg-center group relative overflow-hidden bg-cover h-44 w-64 rounded-xl m-2"
+          class="bg-center group relative overflow-hidden bg-cover sm:h-44 sm:w-64 h-60 w-60 rounded-xl m-2"
         >
           <img
             src="portfolio2.jpg"
@@ -278,7 +286,7 @@
           </div>
         </div>
         <div
-          class="bg-center group relative overflow-hidden bg-cover h-44 w-64 rounded-xl m-2"
+          class="bg-center group relative overflow-hidden bg-cover sm:h-44 sm:w-64 h-60 w-60 rounded-xl m-2"
         >
           <img
             src="portfolio3.jpg"
@@ -299,9 +307,11 @@
         </div>
       </div>
       <!-- image section 2 -->
-      <div class="flex justify-center gap-16">
+      <div
+        class="flex justify-center sm:gap-16 gap-3 sm:ms-0 ms-16 flex-col sm:flex-row"
+      >
         <div
-          class="bg-center group relative overflow-hidden bg-cover h-44 w-64 rounded-xl m-2"
+          class="bg-center group relative overflow-hidden bg-cover sm:h-44 sm:w-64 h-60 w-60 rounded-xl m-2"
         >
           <img
             src="portfolio4.jpg"
@@ -321,7 +331,7 @@
           </div>
         </div>
         <div
-          class="bg-center group relative overflow-hidden bg-cover h-44 w-64 rounded-xl m-2"
+          class="bg-center group relative overflow-hidden bg-cover sm:h-44 sm:w-64 h-60 w-60 rounded-xl m-2"
         >
           <img
             src="portfolio5.jpg"
@@ -341,7 +351,7 @@
           </div>
         </div>
         <div
-          class="bg-center group relative overflow-hidden bg-cover h-44 w-64 rounded-2xl m-2"
+          class="bg-center group relative overflow-hidden bg-cover sm:h-44 sm:w-64 h-60 w-60 rounded-2xl m-2"
         >
           <img
             src="portfolio6.jpg"
@@ -367,8 +377,8 @@
       <h1 class="text-center pt-10 pb-6 font-bold text-3xl" id="contact">
         Contact <span class="font-bold text-3xl text-[#00EFFF]">Me!</span>
       </h1>
-      <div class="px-28 flex flex-col gap-5 pt-7">
-        <div class="flex w-[800px] gap-5 mx-auto">
+      <div class="sm:px-28 px-0 flex flex-col gap-5 pt-7">
+        <div class="flex sm:w-[800px] w-80 gap-5 mx-auto">
           <input
             class="bg-[#323846] px-3 py-2 rounded w-[50%]"
             type="text"
@@ -382,7 +392,7 @@
             required
           />
         </div>
-        <div class="flex w-[800px] gap-5 mx-auto">
+        <div class="flex sm:w-[800px] w-80 gap-5 mx-auto">
           <input
             class="bg-[#323846] px-3 py-2 rounded w-[50%]"
             type="tel"
@@ -395,7 +405,7 @@
             placeholder="Email Subject"
           />
         </div>
-        <div class="w-[800px] mx-auto">
+        <div class="sm:w-[800px] w-80 mx-auto">
           <textarea
             class="bg-[#323846] h-40 p-2 rounded w-[100%]"
             id="message"
