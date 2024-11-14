@@ -16,9 +16,9 @@
     />
   </head>
 
-  <body class="text-white">
+  <body class="text-white ">
     <!-- navbar -->
-    <div class="bg-[#20242D] h-screen">
+    <div class="bg-[#20242D] h-full sm:h-full">
       <nav>
         <div class="bg-[#20242D] justify-between flex gap-10 w-100 px-11 py-8">
           <div class="text-white font-bold text-3xl hover:text-[#00EFFF]">
@@ -33,15 +33,15 @@
               <li><a href="#contact">Contact</a></li>
             </ul>
           </div>
-            <i class="ri-menu-line block text-3xl sm:hidden"></i>
+          <i class="ri-menu-line block text-3xl sm:hidden"></i>
         </div>
       </nav>
 
       <!-- header  -->
       <div
-        class="px-11 sm:flex-row flex-col flex sm:h-screen h-full mb-5 sm:mb-0"
+        class="px-11 sm:flex-row flex-col flex sm:h-auto md:h-[55vh] lg:h-full sm:mb-0"
       >
-        <div class="w-[100%] sm:w-[50%] mt-8 sm:mt-24 mx-auto space-y-3">
+        <div class="w-[100%] sm:w-[50%] sm:mt-24 mx-auto space-y-3">
           <h3 class="font-bold text-xl sm:text-3xl">Hello,It's Me</h3>
           <h1 class="text-3xl sm:text-5xl font-bold mt-1">Muhammad Ali Rao</h1>
           <h2 class="font-bold text-3xl mt-2">
@@ -50,12 +50,12 @@
               >Frontend Developer</span
             >
           </h2>
-          <p class="text-custom mt-3">
+          <p class="text-custom">
             I'm Ali Rao, a Front-End Developer skilled in HTML, CSS, JavaScript,
             Node.js, Bootstrap, and React.js.
           </p>
           <div
-            class="flex sm:gap-8 gap-11 text-2xl mt-3 [&>*:hover]:text-black [&>*:hover]:bg-[#00EFFF]"
+            class="flex sm:gap-8 gap-3 text-2xl [&>*:hover]:text-black [&>*:hover]:bg-[#00EFFF]"
           >
             <a
               class="border border-[#00EFFF] rounded-full px-2 py-1 text-[#00EFFF] transition-all duration-500"
@@ -85,16 +85,16 @@
           <!-- button  -->
           <div>
             <button
-              class="bg-[#00EFFF] w-40 h-9 mt-2 mb-2 ml-14 sm:ml-0 rounded-full text-black border-0 shadow-md shadow-[#00EFFF] text-center font-semibold transition-all duration-300 hover:shadow-transparent"
+              class="bg-[#00EFFF] w-40 h-10 my-2 ml-5 sm:ml-0 rounded-full text-black border-0 shadow-md shadow-[#00EFFF] text-center font-semibold transition-all duration-300 hover:shadow-transparent"
             >
               Download CV
             </button>
           </div>
         </div>
 
-        <div class="w-[100%] sm:w-[50%] flex">
+        <div class="w-[100%] sm:w-[50%] md:flex hidden">
           <div
-            class="bg-[#00EAFB] overflow-hidden top-6 left-0 right-10 ml-12 sm:ml-0 sm:h-96 sm:left-40 relative sm:w-96 rounded-full h-52 w-52"
+            class="bg-[#00EAFB] overflow-hidden top-6  left-0 right-10 ml-12 sm:ml-0 sm:h-96 sm:left-10 relative sm:w-96 rounded-full h-52 w-52"
           >
             <div class="absolute bottom-[-20px]">
               <img src="./image.png" class="rotate-3" alt="" />
@@ -105,64 +105,60 @@
     </div>
     <!-- about -->
     <div
-      class="px-20 justify-between flex bg-[#323846] h-full sm:h-screen"
+      class="flex flex-col md:flex-row bg-[#323846] h-auto md:h-full md:py-7 px-6 sm:px-10 md:px-20"
       id="about"
     >
-      <div
-        class="hidden bg-[#00EAFB] overflow-hidden top-12 sm:flex justify-center right-10 relative sm:w-80 rounded-full sm:h-80 h-32 w-32"
-      >
-        <div class="absolute flex align-middle bottom-[-13px]">
-          <img src="image.png" class="rotate-3" alt="" />
+      <!-- Image Section -->
+      <div class="flex justify-center md:justify-start md:w-1/2 mt-10 md:mt-0">
+        <div
+          class="bg-[#00EAFB] overflow-hidden rounded-full w-32 h-32 sm:w-60 sm:h-60 md:w-80 md:h-80 md:mb- flex items-center justify-center relative"
+        >
+          <img
+            src="image.png"
+            class="rotate-3 w-full h-auto absolute bottom-[-10px]"
+            alt=""
+          />
         </div>
       </div>
-      <div class="sm:w-[50%] mt-16 px-13 py-10 space-y-2 w-[100%]">
-        <div>
-          <h1 class="text-4xl font-bold">
-            About <span class="text-4xl font-bold text-[#00EFFF]">Me</span>
-          </h1>
-        </div>
-        <div>
-          <div class="mb-3">
-            <h3 class="font-bold text-xl">Frontend Developer!</h3>
-          </div>
-          <div>
-            <p class="text-gray-300 font-sans text-1xl pt-1">
-              I'm Ali Rao, a Front-End Developer skilled in HTML, CSS,
-              JavaScript, Node.js, Bootstrap, and React.js. With a Software
-              Engineering background and a Cybersecurity Essentials certificate.
-            </p>
-          </div>
-        </div>
-        <div>
-          <button
-            class="bg-[#00EFFF] w-40 h-9 mt-4 rounded-full text-black border-0 shadow-md shadow-[#00EFFF] text-center font-semibold transition-all duration-300 hover:shadow-transparent"
-          >
-            Read More
-          </button>
-        </div>
+
+      <!-- Text Section -->
+      <div
+        class="flex flex-col justify-center items-center md:items-start w-full md:w-1/2 text-center md:text-left space-y-4 py-10 md:py-0 px-4 sm:px-8"
+      >
+        <h1 class="text-3xl sm:text-4xl font-bold">
+          About <span class="text-[#00EFFF]">Me</span>
+        </h1>
+        <h3 class="text-xl font-bold">Frontend Developer!</h3>
+        <p class="text-gray-300 font-sans text-lg leading-relaxed">
+          I'm Ali Rao, a Front-End Developer skilled in HTML, CSS, JavaScript,
+          Node.js, Bootstrap, and React.js. With a Software Engineering
+          background and a Cybersecurity Essentials certificate.
+        </p>
+        <button
+          class="bg-[#00EFFF] w-40 h-9 rounded-full text-black font-semibold shadow-md shadow-[#00EFFF] transition-all duration-300 hover:shadow-transparent"
+        >
+          Read More
+        </button>
       </div>
     </div>
+
     <!-- Services -->
-    <div class="sm:px-20 px-7 bg-[#20242D] h-[150vh] sm:h-screen" id="services">
+    <div class="bg-[#20242D] h-auto sm:h-screen px-4 sm:px-20 lg:px-6 md:h-full lg:h-screen " id="services">
       <div>
         <h1 class="text-center pt-7 sm:pt-10 block font-bold text-3xl">
           Our <span class="font-bold text-3xl text-[#00EFFF]">Services</span>
         </h1>
       </div>
-      <div
-        class="flex sm:h-full h-screen pt-72 sm:pt-0 w-full items-center justify-center"
-      >
-        <div class="flex items-center gap-8 flex-col sm:flex-row">
+      <div class="flex flex-col items-center justify-center w-full md:w-11/12 mx-auto py-10">
+        <!-- Services Cards Container -->
+        <div class="flex flex-col md:flex-row flex-wrap gap-8 items-center md:justify-center">
+          
           <!-- Web Development Card -->
-          <div
-            class="p-4 sm:h-[33%] sm:w-72 h-[50%] w-[100%] rounded-3xl bg-[#323846] border border-[#323846] transition-all duration-500 hover:border-[#00EFFF] hover:scale-105 flex flex-col justify-between"
-          >
+          <div class="p-4 w-[90%] sm:w-72 md:w-64 rounded-3xl bg-[#323846] border border-[#323846] transition-all duration-500 hover:border-[#00EFFF] hover:scale-105 flex flex-col justify-between">
             <a class="flex justify-center text-[#00EFFF] text-4xl" href="">
               <i class="ri-code-s-slash-line"></i>
             </a>
-            <p
-              class="flex justify-center my-4 text-[#00EFFF] text-2xl font-bold"
-            >
+            <p class="flex justify-center my-4 text-[#00EFFF] text-2xl font-bold">
               Web Development
             </p>
             <p class="mx-4 text-gray-300 font-sans text-center mb-5">
@@ -170,24 +166,18 @@
               experience, and security.
             </p>
             <div class="flex justify-center">
-              <button
-                class="bg-[#00EFFF] w-40 h-9 mt-2 mb-2 rounded-full text-black border-0 shadow-md shadow-[#00EFFF] text-center font-semibold transition-all duration-300 hover:shadow-transparent"
-              >
+              <button class="bg-[#00EFFF] w-40 h-9 mt-2 mb-2 rounded-full text-black font-semibold transition-all duration-300">
                 Read More
               </button>
             </div>
           </div>
-
+    
           <!-- Graphic Design Card -->
-          <div
-            class="p-4 sm:h-[50%] h-[33%] sm:w-72 w-[100%] rounded-3xl bg-[#323846] border border-[#323846] transition-all duration-500 hover:border-[#00EFFF] hover:scale-105 flex flex-col justify-between"
-          >
+          <div class="p-4 w-[90%] sm:w-72 md:w-64 rounded-3xl bg-[#323846] border border-[#323846] transition-all duration-500 hover:border-[#00EFFF] hover:scale-105 flex flex-col justify-between">
             <a class="flex justify-center text-[#00EFFF] text-4xl" href="">
               <i class="ri-mark-pen-line"></i>
             </a>
-            <p
-              class="flex justify-center my-4 text-[#00EFFF] text-2xl font-bold"
-            >
+            <p class="flex justify-center my-4 text-[#00EFFF] text-2xl font-bold">
               Graphic Design
             </p>
             <p class="mx-4 text-gray-300 font-sans text-center mb-5">
@@ -195,24 +185,18 @@
               improve user experience.
             </p>
             <div class="flex justify-center">
-              <button
-                class="bg-[#00EFFF] w-40 h-9 mt-4 mb-2 rounded-full text-black border-0 shadow-md shadow-[#00EFFF] text-center font-semibold transition-all duration-300 hover:shadow-transparent"
-              >
+              <button class="bg-[#00EFFF] w-40 h-9 mt-2 mb-2 rounded-full text-black font-semibold transition-all duration-300">
                 Read More
               </button>
             </div>
           </div>
-
+    
           <!-- Digital Marketing Card -->
-          <div
-            class="p-4 sm:h-[50%] h-[33%] sm:w-72 w-[100%] rounded-3xl bg-[#323846] border border-[#323846] transition-all duration-500 hover:border-[#00EFFF] hover:scale-105 flex flex-col justify-between"
-          >
+          <div class="p-4 w-[90%] sm:w-72 md:w-64 rounded-3xl bg-[#323846] border border-[#323846] transition-all duration-500 hover:border-[#00EFFF] hover:scale-105 flex flex-col justify-between">
             <a class="flex justify-center text-[#00EFFF] text-4xl" href="">
               <i class="ri-bar-chart-fill"></i>
             </a>
-            <p
-              class="flex justify-center my-4 text-[#00EFFF] text-2xl font-bold"
-            >
+            <p class="flex justify-center my-4 text-[#00EFFF] text-2xl font-bold">
               Digital Marketing
             </p>
             <p class="mx-4 text-gray-300 font-sans text-center mb-5">
@@ -220,20 +204,24 @@
               engines, and other digital channels.
             </p>
             <div class="flex justify-center">
-              <button
-                class="bg-[#00EFFF] w-40 h-9 mt-2 mb-2 rounded-full text-black border-0 shadow-md shadow-[#00EFFF] text-center font-semibold transition-all duration-300 hover:shadow-transparent"
-              >
+              <button class="bg-[#00EFFF] w-40 h-9 mt-2 mb-2 rounded-full text-black font-semibold transition-all duration-300">
                 Read More
               </button>
             </div>
           </div>
+          
         </div>
       </div>
     </div>
-    <div class="bg-[#323846] h-full sm:h-screen">
+    
+
+
+
+    <!-- projects  -->
+    <div class="bg-[#323846] h-full sm:h-screen md:h-full lg:h-screen">
       <div>
         <div>
-          <h1 class="text-center pt-5 pb-11 font-bold text-3xl" id="portfolio">
+          <h1 class="text-center font-bold text-3xl pt-2" id="portfolio">
             Latest
             <span class="font-bold text-3xl text-[#00EFFF]">Project</span>
           </h1>
@@ -241,7 +229,7 @@
       </div>
       <!-- IMAGE  -->
       <div
-        class="flex justify-center sm:gap-16 gap-3 sm:ms-0 ms-16 flex-col sm:flex-row"
+        class="flex justify-center sm:gap-16 gap-3 pt-2 sm:ms-0 mx-7  md:mx-9 flex-col sm:flex-row"
       >
         <div
           class="bg-center group relative overflow-hidden bg-cover sm:h-44 sm:w-64 h-60 w-60 rounded-xl m-2"
@@ -308,7 +296,7 @@
       </div>
       <!-- image section 2 -->
       <div
-        class="flex justify-center sm:gap-16 gap-3 sm:ms-0 ms-16 flex-col sm:flex-row"
+        class="flex justify-center sm:gap-16 gap-3 sm:ms-0 mx-7  sm:mx-8 md:mx-9  flex-col sm:flex-row"
       >
         <div
           class="bg-center group relative overflow-hidden bg-cover sm:h-44 sm:w-64 h-60 w-60 rounded-xl m-2"
@@ -373,12 +361,12 @@
       </div>
     </div>
     <!-- Repeatable Card Layout Ends Here -->
-    <div class="bg-[#20242D]">
+    <div class="bg-[#20242D] md:h-full">
       <h1 class="text-center pt-10 pb-6 font-bold text-3xl" id="contact">
         Contact <span class="font-bold text-3xl text-[#00EFFF]">Me!</span>
       </h1>
-      <div class="sm:px-28 px-0 flex flex-col gap-5 pt-7">
-        <div class="flex sm:w-[800px] w-80 gap-5 mx-auto">
+      <div class="sm:px-28 px-0 flex flex-col gap-5 pt-7 md:px-6">
+        <div class="flex sm:w-[800px] w-72 gap-5 mx-auto">
           <input
             class="bg-[#323846] px-3 py-2 rounded w-[50%]"
             type="text"
@@ -392,7 +380,7 @@
             required
           />
         </div>
-        <div class="flex sm:w-[800px] w-80 gap-5 mx-auto">
+        <div class="flex sm:w-[800px] w-72 gap-5 mx-auto">
           <input
             class="bg-[#323846] px-3 py-2 rounded w-[50%]"
             type="tel"
@@ -405,7 +393,7 @@
             placeholder="Email Subject"
           />
         </div>
-        <div class="sm:w-[800px] w-80 mx-auto">
+        <div class="sm:w-[800px] w-72 mx-auto">
           <textarea
             class="bg-[#323846] h-40 p-2 rounded w-[100%]"
             id="message"
@@ -427,7 +415,7 @@
     </div>
 
     <div class="bg-[#323846] flex justify-around items-center">
-      <p class="px-5 py-3 text-gray-400">
+      <p class="px- py-3 text-gray-400">
         © 2024 by Ali Rao | All Rights Reserved
       </p>
       <button
