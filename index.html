@@ -18,84 +18,60 @@
 
   <body class="text-white">
     <!-- navbar -->
-    <div class="bg-[#20242D] h-full sm:h-full">
-      <nav>
-        <div class="bg-[#20242D] justify-between flex gap-10 w-100 px-11 py-8">
-          <div class="text-white font-bold text-3xl hover:text-[#00EFFF]">
-            <p class="text-[##10B8C3]">A<span>R</span></p>
-          </div>
-          <div class="text-white sm:flex hidden">
-            <ul class="flex gap-7 text-xl [&>*:hover]:text-[#00EFFF]" id="home">
-              <li><a href="#home">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#services">Services</a></li>
-              <li><a href="#portfolio">Portfolio</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          </div>
-          <i class="ri-menu-line block text-3xl sm:hidden"></i>
+    <div class="bg-[#20242D] h-full md:h-full">
+      <!-- Navbar -->
+      <nav class="fixed top-0 left-0 w-full z-50 bg-[#20242D] justify-between flex gap-10 w-100 px-11 py-8">
+        <div class="text-white font-bold text-3xl hover:text-[#00EFFF]">
+          <p class="text-[##10B8C3]">A<span>R</span></p>
         </div>
+        <div class="text-white sm:flex hidden">
+          <ul class="flex gap-7 text-xl [&>*:hover]:text-[#00EFFF]">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <i class="ri-menu-line block text-3xl sm:hidden"></i>
       </nav>
-
-      <!-- header  -->
-      <div
-        class="px-11 sm:flex-row flex-col flex sm:h-auto md:h-[55vh] lg:h-full sm:mb-0"
-      >
+    
+      <!-- Header -->
+      <div class="px-5 sm:flex-row flex-col flex sm:h-full  md:h-full sm:mb-0 top-2 mt-[100px] sm:mt-[120px] md:mt-[100px]">
         <div class="w-[100%] sm:w-[50%] sm:mt-24 mx-auto space-y-3">
-          <h3 class="font-bold text-xl sm:text-3xl">Hello,It's Me</h3>
-          <h1 class="text-3xl sm:text-5xl font-bold mt-1">Muhammad Ali Rao</h1>
-          <h2 class="font-bold text-3xl mt-2">
+          <h3 class="font-bold text-xl sm:text-3xl">Hello, It's Me</h3>
+          <h1 class="text-3xl sm:text-3xl font-bold mt-1 ">Muhammad Ali Rao</h1>
+          <h2 class="font-bold text-1xl mt-2">
             And I'm
-            <span class="font-bold text-3xl text-[#00EFFF]"
-              >Frontend Developer</span
-            >
+            <span class="font-bold text-1xl text-[#00EFFF]">Frontend Developer</span>
           </h2>
           <p class="text-custom">
-            I'm Ali Rao, a Front-End Developer skilled in HTML, CSS, JavaScript,
-            Node.js, Bootstrap, and React.js.
+            I'm Ali Rao, a Front-End Developer skilled in HTML, CSS, JavaScript, Node.js, Bootstrap, and React.js.
           </p>
-          <div
-            class="flex justify-center md:justify-start sm:gap-8 gap-3 text-2xl [&>*:hover]:text-black [&>*:hover]:bg-[#00EFFF]"
-          >
-            <a
-              class="border border-[#00EFFF] rounded-full px-2 py-1 text-[#00EFFF] transition-all duration-500"
-              href=""
-            >
+          <div class="flex md:justify-start sm:gap-8 gap-3 text-2xl [&>*:hover]:text-black [&>*:hover]:bg-[#00EFFF]">
+            <a class="border border-[#00EFFF] rounded-full px-2 py-1 text-[#00EFFF] transition-all duration-500" href="">
               <i class="ri-facebook-line"></i>
             </a>
-            <a
-              class="border border-[#00EFFF] rounded-full px-2 py-1 text-[#00EFFF] transition-all duration-500"
-              href=""
-            >
+            <a class="border border-[#00EFFF] rounded-full px-2 py-1 text-[#00EFFF] transition-all duration-500" href="">
               <i class="ri-twitter-line"></i>
             </a>
-            <a
-              class="border border-[#00EFFF] rounded-full px-2 py-1 text-[#00EFFF] transition-all duration-500"
-              href=""
-            >
+            <a class="border border-[#00EFFF] rounded-full px-2 py-1 text-[#00EFFF] transition-all duration-500" href="">
               <i class="ri-linkedin-line"></i>
             </a>
-            <a
-              class="border border-[#00EFFF] rounded-full px-2 py-1 text-[#00EFFF] transition-all duration-500"
-              href=""
-            >
+            <a class="border border-[#00EFFF] rounded-full px-2 py-1 text-[#00EFFF] transition-all duration-500" href="">
               <i class="ri-instagram-line"></i>
             </a>
           </div>
-          <!-- button  -->
-          <div class="flex justify-center md:justify-start">
-            <button
-              class="bg-[#00EFFF] w-40 h-10 my-3  sm:ml-0 rounded-full text-black border-0 shadow-md shadow-[#00EFFF] text-center font-semibold transition-all duration-300 hover:shadow-transparent"
-            >
+          <!-- Button -->
+          <div class="flex md:justify-start">
+            <button class="bg-[#00EFFF] w-40 h-10 my-3 sm:ml-0 rounded-full text-black border-0 shadow-md shadow-[#00EFFF] text-center font-semibold transition-all duration-300 hover:shadow-transparent">
               Download CV
             </button>
           </div>
         </div>
-
+    
         <div class="w-[100%] sm:w-[50%] md:flex hidden">
-          <div
-            class="bg-[#00EAFB] overflow-hidden top-6 left-0 right-10 ml-12 sm:ml-0 sm:h-96 sm:left-10 relative sm:w-96 rounded-full h-52 w-52"
-          >
+          <div class="bg-[#00EAFB] overflow-hidden top-5 left-0 right-10 ml-12 sm:ml-14 sm:h-96  relative sm:w-96 rounded-full h-52 w-52">
             <div class="absolute bottom-[-20px]">
               <img src="./image.png" class="rotate-3" alt="" />
             </div>
@@ -103,6 +79,8 @@
         </div>
       </div>
     </div>
+    
+    
     <!-- about -->
     <div
       class="flex flex-col md:flex-row bg-[#323846] h-auto md:h-full md:py-7 px-6 sm:px-10 md:px-20"
@@ -248,8 +226,8 @@
         </div>
       </div>
       <!-- IMAGE  -->
-      <div  
-        class="flex justify-center lg:justify-center  lg:ms-7  sm:gap-16 gap-3 ms-14 pt-2 sm:ms-9 sm:ml-7 mx-7 md: flex-col sm:flex-row"
+      <div
+        class="flex justify-center lg:justify-center lg:ms-7 sm:gap-16 gap-3 ms-14 pt-2 sm:ms-9 sm:ml-7 mx-7 md: flex-col sm:flex-row"
       >
         <div
           class="bg-center group relative overflow-hidden bg-cover sm:h-44 sm:w-64 h-60 w-60 rounded-xl m-2"
@@ -316,7 +294,7 @@
       </div>
       <!-- image section 2 -->
       <div
-        class="flex justify-center ms-14 sm:gap-16 gap-3 sm:ms-7 lg:ms-9  md:justify-center mx-7 sm:mx-8 md:mx-9 flex-col sm:flex-row"
+        class="flex justify-center ms-14 sm:gap-16 gap-3 sm:ms-7 lg:ms-9 md:justify-center mx-7 sm:mx-8 md:mx-9 flex-col sm:flex-row"
       >
         <div
           class="bg-center group relative overflow-hidden bg-cover sm:h-44 sm:w-64 h-60 w-60 rounded-xl m-2"
