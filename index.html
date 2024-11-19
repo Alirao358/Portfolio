@@ -18,15 +18,18 @@
 
   <body class="text-white">
     <!-- navbar -->
-    <div class="bg-[#20242D] h-full md:h-full">
+    <header class="bg-[#20242D] h-screen md:h-screen">
       <!-- Navbar -->
-      <nav class="fixed top-0 left-0 w-full z-50 bg-[#20242D] justify-between flex gap-10 w-100 px-11 py-8">
-        <div class="text-white font-bold text-3xl hover:text-[#00EFFF]">
-          <p class="text-[##10B8C3]">A<span>R</span></p>
+      <nav
+        class="fixed top-0 left-0 w-full z-50 bg-[#20242D] justify-between flex gap-10 w-100 px-11 py-8"
+      >
+        <div class="text-white font-bold text-3xl flex">
+          <p class="text-[#00EFFF]">A</p>
+          <span class="">R</span>
         </div>
-        <div class="text-white sm:flex hidden">
+        <div class="text-white navbar sm:flex hidden">
           <ul class="flex gap-7 text-xl [&>*:hover]:text-[#00EFFF]">
-            <li><a href="#home">Home</a></li>
+            <li><a href="#home" class="active:">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
@@ -35,59 +38,80 @@
         </div>
         <i class="ri-menu-line block text-3xl sm:hidden"></i>
       </nav>
-    
+
       <!-- Header -->
-      <div class="px-5 sm:flex-row flex-col flex sm:h-full  md:h-full sm:mb-0 top-2 mt-[100px] sm:mt-[120px] md:mt-[100px]">
+      <div
+        class="px-5 sm:flex-row flex-col flex sm:h-screen md:h-screen sm:mb-0 top-2 mt-[100px] sm:mt-[120px] md:mt-[100px]"
+      >
         <div class="w-[100%] sm:w-[50%] sm:mt-24 mx-auto space-y-3">
           <h3 class="font-bold text-xl sm:text-3xl">Hello, It's Me</h3>
-          <h1 class="text-3xl sm:text-3xl font-bold mt-1 ">Muhammad Ali Rao</h1>
+          <h1 class="text-3xl sm:text-3xl font-bold mt-1">Muhammad Ali Rao</h1>
           <h2 class="font-bold text-1xl mt-2">
             And I'm
-            <span class="font-bold text-1xl text-[#00EFFF]">Frontend Developer</span>
+            <span class="font-bold text-1xl text-[#00EFFF]"
+              >Frontend Developer</span
+            >
           </h2>
           <p class="text-custom">
-            I'm Ali Rao, a Front-End Developer skilled in HTML, CSS, JavaScript, Node.js, Bootstrap, and React.js.
+            I'm Ali Rao, a Front-End Developer skilled in HTML, CSS, JavaScript,
+            Node.js, Bootstrap, and React.js.
           </p>
-          <div class="flex md:justify-start sm:gap-8 gap-3 text-2xl [&>*:hover]:text-black [&>*:hover]:bg-[#00EFFF]">
-            <a class="border border-[#00EFFF] rounded-full px-2 py-1 text-[#00EFFF] transition-all duration-500" href="">
+          <div
+            class="flex md:justify-start sm:gap-8 gap-3 text-2xl [&>*:hover]:text-black [&>*:hover]:bg-[#00EFFF]"
+          >
+            <a
+              class="border border-[#00EFFF] rounded-full px-2 py-1 text-[#00EFFF] transition-all duration-500"
+              href=""
+            >
               <i class="ri-facebook-line"></i>
             </a>
-            <a class="border border-[#00EFFF] rounded-full px-2 py-1 text-[#00EFFF] transition-all duration-500" href="">
+            <a
+              class="border border-[#00EFFF] rounded-full px-2 py-1 text-[#00EFFF] transition-all duration-500"
+              href=""
+            >
               <i class="ri-twitter-line"></i>
             </a>
-            <a class="border border-[#00EFFF] rounded-full px-2 py-1 text-[#00EFFF] transition-all duration-500" href="">
+            <a
+              class="border border-[#00EFFF] rounded-full px-2 py-1 text-[#00EFFF] transition-all duration-500"
+              href=""
+            >
               <i class="ri-linkedin-line"></i>
             </a>
-            <a class="border border-[#00EFFF] rounded-full px-2 py-1 text-[#00EFFF] transition-all duration-500" href="">
+            <a
+              class="border border-[#00EFFF] rounded-full px-2 py-1 text-[#00EFFF] transition-all duration-500"
+              href=""
+            >
               <i class="ri-instagram-line"></i>
             </a>
           </div>
           <!-- Button -->
           <div class="flex md:justify-start">
-            <button class="bg-[#00EFFF] w-40 h-10 my-3 sm:ml-0 rounded-full text-black border-0 shadow-md shadow-[#00EFFF] text-center font-semibold transition-all duration-300 hover:shadow-transparent">
+            <button
+              class="bg-[#00EFFF] w-40 h-10 my-3 sm:ml-0 rounded-full text-black border-0 shadow-md shadow-[#00EFFF] text-center font-semibold transition-all duration-300 hover:shadow-transparent"
+            >
               Download CV
             </button>
           </div>
         </div>
-    
+
         <div class="w-[100%] sm:w-[50%] md:flex hidden">
-          <div class="bg-[#00EAFB] overflow-hidden top-5 left-0 right-10 ml-12 sm:ml-14 sm:h-96  relative sm:w-96 rounded-full h-52 w-52">
+          <div
+            class="bg-[#00EAFB] overflow-hidden top-5 left-0 right-10 ml-12 sm:ml-14 sm:h-96 relative sm:w-96 rounded-full h-52 w-52"
+          >
             <div class="absolute bottom-[-20px]">
               <img src="./image.png" class="rotate-3" alt="" />
             </div>
           </div>
         </div>
       </div>
-    </div>
-    
-    
+    </header>
     <!-- about -->
-    <div
-      class="flex flex-col md:flex-row bg-[#323846] h-auto md:h-full md:py-7 px-6 sm:px-10 md:px-20"
+    <section
+      class="flex flex-col md:flex-row h-screen bg-[#323846] md:py-7 px-6 sm:px-10 md:px-20 md:h-screen"
       id="about"
     >
       <!-- Image Section -->
-      <div class="flex justify-center md:justify-start md:w-1/2 mt-10 md:mt-0">
+      <div class="flex justify-center md:justify-start md:w-1/2 mt-10 md:mt-24">
         <div
           class="bg-[#00EAFB] overflow-hidden rounded-full w-32 h-32 sm:w-60 sm:h-60 md:w-80 md:h-80 md:mb- flex items-center justify-center relative"
         >
@@ -98,7 +122,6 @@
           />
         </div>
       </div>
-
       <!-- Text Section -->
       <div
         class="flex flex-col justify-center items-center md:items-start w-full md:w-1/2 text-center md:text-left space-y-4 py-10 md:py-0 px-4 sm:px-8"
@@ -118,11 +141,10 @@
           Read More
         </button>
       </div>
-    </div>
-
+    </section>
     <!-- Services -->
-    <div
-      class="bg-[#20242D] h-auto sm:h-screen px-4 sm:px-20 lg:px-6 md:h-full lg:h-full"
+    <section
+      class="bg-[#20242D] h-screen sm:h-screen px-4 sm:px-20 lg:px-6 md:h-screen lg:h-screen"
       id="services"
     >
       <div>
@@ -161,7 +183,6 @@
               </button>
             </div>
           </div>
-
           <!-- Graphic Design Card -->
           <div
             class="p-4 w-[90%] sm:w-72 md:w-64 rounded-3xl bg-[#323846] border border-[#323846] transition-all duration-500 hover:border-[#00EFFF] hover:scale-105 flex flex-col justify-between"
@@ -186,7 +207,6 @@
               </button>
             </div>
           </div>
-
           <!-- Digital Marketing Card -->
           <div
             class="p-4 w-[90%] sm:w-72 md:w-64 rounded-3xl bg-[#323846] border border-[#323846] transition-all duration-500 hover:border-[#00EFFF] hover:scale-105 flex flex-col justify-between"
@@ -213,10 +233,9 @@
           </div>
         </div>
       </div>
-    </div>
-
+    </section>
     <!-- projects  -->
-    <div class="bg-[#323846] h-full sm:h-screen md:h-full lg:h-full">
+    <section class="bg-[#323846] h-full sm:h-screen md:h-screen lg:h-screen">
       <div>
         <div>
           <h1 class="text-center font-bold text-3xl pt-2" id="portfolio">
@@ -357,9 +376,9 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
     <!-- Repeatable Card Layout Ends Here -->
-    <div class="bg-[#20242D] md:h-full lg:h-auto">
+    <section class="bg-[#20242D] md:h-screen lg:h-screen sm:h-screen">
       <h1 class="text-center pt-10 pb-6 font-bold text-3xl" id="contact">
         Contact <span class="font-bold text-3xl text-[#00EFFF]">Me!</span>
       </h1>
@@ -410,9 +429,8 @@
           Send Message
         </button>
       </div>
-    </div>
-
-    <div class="bg-[#323846] flex justify-around items-center">
+    </section>
+    <section class="bg-[#323846] flex justify-around items-center">
       <p class="px- py-3 text-gray-400">
         © 2024 by Ali Rao | All Rights Reserved
       </p>
@@ -421,6 +439,7 @@
       >
         <i class="ri-arrow-up-line"></i>
       </button>
-    </div>
+    </section>
+    <script src="./script.js"></script>
   </body>
 </html>
