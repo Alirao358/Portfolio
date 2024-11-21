@@ -14,11 +14,16 @@
       href="./favicon_io/favicon.ico"
       type="image/x-icon"
     />
+    <style>
+      .active {
+        color: #00efff;
+      }
+    </style>
   </head>
 
   <body class="text-white">
     <!-- navbar -->
-    <header class="bg-[#20242D] h-screen md:h-screen">
+    <header class="bg-[#20242D]">
       <!-- Navbar -->
       <nav
         class="fixed top-0 left-0 w-full z-50 bg-[#20242D] justify-between flex gap-10 w-100 px-11 py-8"
@@ -39,14 +44,28 @@
         <i class="ri-menu-line block text-3xl sm:hidden"></i>
       </nav>
 
-      <!-- Header -->
+      <!-- Hero section -->
       <div
-        class="px-5 sm:flex-row flex-col flex sm:h-screen md:h-screen sm:mb-0 top-2 mt-[100px] sm:mt-[120px] md:mt-[100px]"
+        id="home"
+        class="section px-5 flex flex-col md:flex-row  sm:mb-0 mt-[100px] sm:mt-[120px] md:mt-[100px] h-screen sm:h-96 md:h-fit md:py-20 lg:h-[700px]"
       >
-        <div class="w-[100%] sm:w-[50%] sm:mt-24 mx-auto space-y-3">
+        <!-- Image Section -->
+        <div
+          class="w-full sm:w-[50%] sm:ml-14 sm:order-2 order-1 flex justify-center mb-6 mt-4 sm:mb-0"
+        >
+          <div
+            class="bg-[#00EAFB] overflow-hidden sm:h-96 sm:w-96 rounded-full h-52 w-52 flex justify-center items-center"
+          >
+            <img src="./image.png" class="rotate-3" alt="" />
+          </div>
+        </div>
+        <!-- Text Section -->
+        <div
+          class="w-[100%] sm:w-[50%] sm:order-1 order-2 sm:text-left text-center space-y-3 sm:mt-24"
+        >
           <h3 class="font-bold text-xl sm:text-3xl">Hello, It's Me</h3>
           <h1 class="text-3xl sm:text-3xl font-bold mt-1">Muhammad Ali Rao</h1>
-          <h2 class="font-bold text-1xl mt-2">
+          <h2 class="font-bold text-2xl mt-2">
             And I'm
             <span class="font-bold text-1xl text-[#00EFFF]"
               >Frontend Developer</span
@@ -57,7 +76,7 @@
             Node.js, Bootstrap, and React.js.
           </p>
           <div
-            class="flex md:justify-start sm:gap-8 gap-3 text-2xl [&>*:hover]:text-black [&>*:hover]:bg-[#00EFFF]"
+            class="flex sm:justify-start justify-center gap-3 sm:gap-8 text-2xl [&>*:hover]:text-black [&>*:hover]:bg-[#00EFFF]"
           >
             <a
               class="border border-[#00EFFF] rounded-full px-2 py-1 text-[#00EFFF] transition-all duration-500"
@@ -85,35 +104,22 @@
             </a>
           </div>
           <!-- Button -->
-          <div class="flex md:justify-start">
+          <div class="flex sm:justify-start justify-center">
             <button
-              class="bg-[#00EFFF] w-40 h-10 my-3 sm:ml-0 rounded-full text-black border-0 shadow-md shadow-[#00EFFF] text-center font-semibold transition-all duration-300 hover:shadow-transparent"
+              class="bg-[#00EFFF] w-40 h-10 my-3 rounded-full text-black border-0 shadow-md shadow-[#00EFFF] text-center font-semibold transition-all duration-300 hover:shadow-transparent"
             >
               Download CV
             </button>
           </div>
         </div>
-
-        <div class="w-[100%] sm:w-[50%] md:flex hidden">
-          <div
-            class="bg-[#00EAFB] overflow-hidden top-5 left-0 right-10 ml-12 sm:ml-14 sm:h-96 relative sm:w-96 rounded-full h-52 w-52"
-          >
-            <div class="absolute bottom-[-20px]">
-              <img src="./image.png" class="rotate-3" alt="" />
-            </div>
-          </div>
-        </div>
       </div>
     </header>
     <!-- about -->
-    <section
-      class="flex flex-col md:flex-row h-screen bg-[#323846] md:py-7 px-6 sm:px-10 md:px-20 md:h-screen"
-      id="about"
-    >
-      <!-- Image Section -->
-      <div class="flex justify-center md:justify-start md:w-1/2 mt-10 md:mt-24">
+    <div id="about" class="section flex items-center flex-col md:flex-row h-screen bg-[#323846]  px-6 sm:px-10 md:px-20 md:h-fit md:py-40 lg:h-screen">
+      <!-- About_Image Section -->
+      <div class="flex justify-center md:justify-start md:w-1/2">
         <div
-          class="bg-[#00EAFB] overflow-hidden rounded-full w-32 h-32 sm:w-60 sm:h-60 md:w-80 md:h-80 md:mb- flex items-center justify-center relative"
+          class="bg-[#00EAFB] overflow-hidden rounded-full w-32 h-32 sm:w-60 sm:h-60 md:w-80 md:h-80 flex items-center justify-center relative"
         >
           <img
             src="image.png"
@@ -122,9 +128,10 @@
           />
         </div>
       </div>
+      
       <!-- Text Section -->
       <div
-        class="flex flex-col justify-center items-center md:items-start w-full md:w-1/2 text-center md:text-left space-y-4 py-10 md:py-0 px-4 sm:px-8"
+        class="flex flex-col justify-center items-center md:items-start w-full md:w-1/2 text-center md:text-left space-y-4  px-4 sm:px-8 "
       >
         <h1 class="text-3xl sm:text-4xl font-bold">
           About <span class="text-[#00EFFF]">Me</span>
@@ -141,10 +148,11 @@
           Read More
         </button>
       </div>
-    </section>
+    </div>
+    
     <!-- Services -->
     <section
-      class="bg-[#20242D] h-screen sm:h-screen px-4 sm:px-20 lg:px-6 md:h-screen lg:h-screen"
+      class="section bg-[#20242D] h-full sm:h-screen px-4 sm:px-20 lg:px-6 md:h-full lg:h-screen"
       id="services"
     >
       <div>
@@ -235,10 +243,13 @@
       </div>
     </section>
     <!-- projects  -->
-    <section class="bg-[#323846] h-full sm:h-screen md:h-screen lg:h-screen">
+    <section
+      class="section bg-[#323846] h-full sm:h-screen md:h-full lg:h-screen"
+      id="portfolio"
+    >
       <div>
         <div>
-          <h1 class="text-center font-bold text-3xl pt-2" id="portfolio">
+          <h1 class="text-center font-bold text-3xl pt-2">
             Latest
             <span class="font-bold text-3xl text-[#00EFFF]">Project</span>
           </h1>
@@ -378,8 +389,11 @@
       </div>
     </section>
     <!-- Repeatable Card Layout Ends Here -->
-    <section class="bg-[#20242D] md:h-screen lg:h-screen sm:h-screen">
-      <h1 class="text-center pt-10 pb-6 font-bold text-3xl" id="contact">
+    <section
+      class="section bg-[#20242D] md:h-full lg:h-screen sm:h-screen"
+      id="contact"
+    >
+      <h1 class="text-center pt-10 pb-6 font-bold text-3xl">
         Contact <span class="font-bold text-3xl text-[#00EFFF]">Me!</span>
       </h1>
       <div class="sm:px-28 px-0 flex flex-col gap-5 pt-7 md:px-6">
